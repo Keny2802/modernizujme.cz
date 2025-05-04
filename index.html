@@ -6,6 +6,7 @@
     <title>Portfolio Web Developera - Vojta Oliva</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/Picture (1).png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="header">
@@ -22,12 +23,17 @@
                     </a>
                 </li>
                 <li class="header-item">
-                    <a href="#" class="header-link">
+                    <a href="#services" class="header-link">
+                        Služby
+                    </a>
+                </li>
+                <li class="header-item">
+                    <a href="#prices" class="header-link">
                         Ceník
                     </a>
                 </li>
                 <li class="header-item">
-                    <a href="#" class="header-link">
+                    <a href="#contact" class="header-link">
                         Kontakt
                     </a>
                 </li>
@@ -60,12 +66,17 @@
                     </a>
                 </li>
                 <li class="mobile-menu-item">
-                    <a href="#" class="mobile-menu-link">
+                    <a href="#services" class="mobile-menu-link">
+                        Služby
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#prices" class="mobile-menu-link">
                         Ceník
                     </a>
                 </li>
                 <li class="mobile-menu-item">
-                    <a href="#" class="mobile-menu-link">
+                    <a href="#contact" class="mobile-menu-link">
                         Kontakt
                     </a>
                 </li>
@@ -105,6 +116,16 @@
                 <div class="picture">
                     <img src="images/Picture (1).png" loading="lazy" alt="Me">
                 </div>
+                <div class="text-content-container">
+                    <div class="tech-stack">
+                        <i class='tech-stack-icon bx bxl-html5 html-icon'></i>
+                        <i class='tech-stack-icon bx bxl-css3 css-icon'></i>
+                        <i class='tech-stack-icon bx bxl-tailwind-css tailwind-css-icon'></i>
+                        <i class='tech-stack-icon bx bxl-nodejs nodejs-icon'></i>
+                        <i class='tech-stack-icon bx bxl-vuejs vuejs-icon'></i>
+                        <i class='tech-stack-icon bx bxl-php php-icon'></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -119,7 +140,9 @@
                         <p class="project-wrapper-heading">
                             Dražby360
                         </p>
-                        <img src="images/Projects pictures/Dražby360jpg.jpg" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                        <div class="show-case-picture-container">
+                            <img src="images/Projects pictures/Dražby360jpg.jpg" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                        </div>
                         <div class="text-content-container">
                             <p class="project-wrapper-desc">
                                 Moderní webová aplikace pro sledování exekutorských dražeb v reálném čase.
@@ -169,7 +192,9 @@
                             <p class="project-wrapper-heading">
                                 MotoServis Kulhánek
                             </p>
-                            <img src="images/Projects pictures/MotoServis Kulhánek.jpg" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                            <div class="show-case-picture-container">
+                                <img src="images/Projects pictures/MotoServis Kulhánek.jpg" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                            </div>
                             <p class="project-wrapper-desc">
                                 Digitální tvář dílny, která se nebojí špinavých rukou a miluje pořádný zvuk motoru.
                             </p>
@@ -206,7 +231,9 @@
                             <p class="project-wrapper-heading">
                                 Autosklad
                             </p>
-                            <img src="images/Projects pictures/Autosklad.jpg" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                            <div class="show-case-picture-container">
+                                <img src="images/Projects pictures/Autosklad.jpg" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                            </div>
                             <p class="project-wrapper-desc">
                                 Moderní webová aplikace pro správu skladových zásob a autodílů.
                             </p>
@@ -245,7 +272,9 @@
                         <p class="project-wrapper-heading">
                             Porty.dev
                         </p>
-                        <img src="images/Projects pictures/Portydev.png" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                        <div class="show-case-picture-container">
+                            <img src="images/Projects pictures/Portydev.png" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                        </div>
                         <p class="project-wrapper-desc">
                             Web, kde žiju své sny - moje práce, myšlenky a cesta vývojáře.
                         </p>
@@ -275,12 +304,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="project">
+                <!-- <div class="project">
                     <div class="project-wrapper">
                         <p class="project-wrapper-heading">
                             Porsche Izza
                         </p>
-                        <img src="images/Projects pictures/Porsche Izza.png" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                        <div class="show-case-picture-container">
+                            <img src="images/Projects pictures/Porsche Izza.png" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                        </div>
                         <div class="text-content-container">
                             <p class="project-wrapper-desc">
                                 Motivace způsobu webové stránky, která má na mě působit, abych se ke svému snu koupi Porsche mnohem přiblížil.
@@ -311,13 +342,15 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="project">
+                </div> -->
+                <!-- <div class="project">
                     <div class="project-wrapper">
                         <p class="project-wrapper-heading">
                             2FMovies
                         </p>
-                        <img src="images/Projects pictures/2FMovies.png" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                        <div class="show-case-picture-container">
+                            <img src="images/Projects pictures/Porsche Izza.png" alt="Showcase picture of this project" loading="lazy" class="showcase-picture">
+                        </div>
                         <div class="text-content-container">
                             <p class="project-wrapper-desc">
                                 Webová aplikace pomocí které zhlédnete jakýkoliv film či seriál bez čekání a bez reklam.
@@ -348,10 +381,267 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
+    <div class="services" id="services">
+        <div class="services-container">
+            <h2 class="heading">
+                Služby pro Váš web
+            </h2>
+            <div class="services-wrapper">
+                <div class="service">
+                    <!-- <i class="bx bx-desktop service-icon"></i> -->
+                    <h3 class="service-heading">
+                        <span class="service-icon">
+                            🖥️
+                        </span>
+                        Tvorba webů
+                    </h3>
+                    <p class="service-description">
+                        Responzivní a moderní weby na míru - rychlé, přehledné a přístupné.
+                    </p>
+                    <ul class="benefits">
+                        <li class="benefit">
+                            Responzivní design pro mobil, tablet i počítač
+                        </li>
+                        <li class="benefit">
+                            Rychlé načítání a čistý kód
+                        </li>
+                        <li class="benefit">
+                            Moderní vizuál přizpůsobený klientovi
+                        </li>
+                        <li class="benefit">
+                            Možnost napojení na kontaktní formulář, mapu nebo galerii
+                        </li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <!-- <i class="bx bxs-wrench service-icon"></i> -->
+                    <h3 class="service-heading">
+                        <span class="service-icon">
+                            🛠️
+                        </span>
+                        Správa a údržba
+                    </h3>
+                    <p class="service-description">
+                        Postarám se o aktualizace, zabezpečení a běžnou údržbu vašich webů.
+                    </p>
+                    <ul class="benefits">
+                        <li class="benefit">
+                            Pravidelné aktualizace a kontrola funkčnosti
+                        </li>
+                        <li class="benefit">
+                            Zálohování webu a obnova v případě problémů
+                        </li>
+                        <li class="benefit">
+                            Oprava chyb a optimalizace výkonu
+                        </li>
+                        <li class="benefit">
+                            Bezpečnostní dohled a ochrana proti útokům
+                        </li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <!-- <i class="bx bx-brain service-icon"></i> -->
+                    <h3 class="service-heading">
+                        <span class="service-icon">
+                            🧠
+                        </span>
+                        Vývoj software
+                    </h3>
+                    <p class="service-description">
+                        Aplikace a systémy na míru - evidence, sklady, interní nástroje pro firmy.
+                    </p>
+                    <ul class="benefits">
+                        <li class="benefit">
+                            Přesně podle potřeb vaší firmy nebo projektu
+                        </li>
+                        <li class="benefit">
+                            Intuitivní rozhraní pro snadné používání
+                        </li>
+                        <li class="benefit">
+                            Databáze klientů, skladů, objednávek apod.
+                        </li>
+                        <li class="benefit">
+                            Možnost budoucího rozšíření funkcí
+                        </li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <!-- <i class="bx bx-bar-chart service-icon"></i> -->
+                    <h3 class="service-heading">
+                        <span class="service-icon">
+                            🔍
+                        </span>
+                        SEO a Optimalizace výkonu
+                    </h3>
+                    <p class="service-description">
+                        Zrychlím váš web, upravím strukturu a pomohu, aby vás našli zákazníci na Googlu.
+                    </p>
+                    <ul class="benefits">
+                        <li class="benefit">
+                            Zrychlení načítání webu (Core Web Vitals)
+                        </li>
+                        <li class="benefit">
+                            Základní SEO nastavení (titles, metapopisky, nadpisy)
+                        </li>
+                        <li class="benefit">
+                            Optimalizace obrázků a velikosti stránek
+                        </li>
+                        <li class="benefit">
+                            Lepší viditelnost na Googlu a vyšší návštěvnost
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-me-container">
+                <a href="#" class="contact-me">
+                    Nezávazně poptat
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="prices" id="prices">
+        <div class="prices-container">
+            <h2 class="heading">
+                <!-- Transparentní a férové ceny. Přesně víte, co kupujete -->
+                Ceník služeb
+            </h2>
+            <div class="prices-wrapper">
+                <div class="price">
+                    <div class="price-wrapper">
+                        <div class="label">
+                            <span class="label-content">
+                                Start
+                            </span>
+                        </div>
+                        <h3 class="price-heading">
+                            <span class="price-icon">
+                                💼
+                            </span>
+                            Rychlý start pro vaši online přítomnost
+                        </h3>
+                        <p class="price-description">
+                            Jednoduchý, ale profesionální web ideální pro osobní prezentaci nebo menší podnikání.
+                        </p>
+                        <strong class="strong-text">
+                            V ceně
+                        </strong>
+                        <ul class="contains">
+                            <li class="contain">
+                                Jednostránkový web (např. portfolio / vizitka)
+                            </li>
+                            <li class="contain">
+                                Responzivní design (mobil/tablet/PC)
+                            </li>
+                            <li class="contain">
+                                Základní kontaktní formulář
+                            </li>
+                            <li class="contain">
+                                Základní optimalizace výkonu
+                            </li>
+                            <li class="contain">
+                                Dodání do 3-5 dní
+                            </li>
+                        </ul>
+                        <p class="price-price">
+                            Od 4.000 Kč
+                        </p>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="price-wrapper">
+                        <div class="label">
+                            <span class="label-content">
+                                Profi
+                            </span>
+                        </div>
+                        <h3 class="price-heading">
+                            <span class="price-icon">
+                                📦
+                            </span>
+                            Profesionální web na míru pro vaše podnikání
+                        </h3>
+                        <p class="price-description">
+                            Komplexnější web s vícero stránkami a vyladěnou optimalizací pro běžné podnikání.
+                        </p>
+                        <strong class="strong-text">
+                            V ceně
+                        </strong>
+                        <ul class="contains">
+                            <li class="contain">
+                                Vícestránkový web (např. domů, služby, o nás, kontakt)
+                            </li>
+                            <li class="contain">
+                                Pokročilý formulář nebo galerie
+                            </li>
+                            <li class="contain">
+                                SEO optimalizace (titles, nadpisy, metapopisky)
+                            </li>
+                            <li class="contain">
+                                Rychlostní optimalizace (lazy load, minifikace)
+                            </li>
+                            <li class="contain">
+                                Zaškolení, jak si web upravovat
+                            </li>
+                        </ul>
+                        <p class="price-price">
+                            Od 8.000 Kč
+                        </p>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="price-wrapper">
+                        <div class="label">
+                            <span class="label-content">
+                                Max
+                            </span>
+                        </div>
+                        <h3 class="price-heading">
+                            <span class="price-icon">
+                                🚀
+                            </span>
+                            Prémiové řešení se správou a podporou
+                        </h3>
+                        <p class="price-description">
+                            Kompletní řešení na míru včetně dlouhodobé správy a analytiky. Ideální pro náročné projekty.
+                        </p>
+                        <strong class="strong-text">
+                            V ceně
+                        </strong>
+                        <ul class="contains">
+                            <li class="contain">
+                                Web + administrační systém / připojený software
+                            </li>
+                            <li class="contain">
+                                Pravidelná správa a aktualizace webu
+                            </li>
+                            <li class="contain">
+                                Pokročilé SEO a analytika (Google Analytics)
+                            </li>
+                            <li class="contain">
+                                Zabezpečení (SSL, ochrana proti útokům)
+                            </li>
+                            <li class="contain">
+                                Technická podpora po spuštění
+                            </li>
+                        </ul>
+                        <p class="price-price">
+                            Od 15.000 Kč
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="warning">
+                <p class="warning-content">
+                    Ceny jsou orientační a mohou se lišit dle konkrétního zadání. Každý projekt naceňuji individuálně.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact"></div>
     <footer class="footer"></footer>
     <script src="home.js"></script>
 </body>
