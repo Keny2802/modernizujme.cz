@@ -23,6 +23,49 @@ function closeMobileMenu() {
     });
 };
 
+function mainHeadercustomLinks() {
+    const mainHeader = document.querySelector(".header");
+    const mainHeaderLinks = mainHeader.querySelectorAll(".header-link");
+
+    mainHeaderLinks.forEach((mainHeaderLink) => {
+        mainHeaderLink.addEventListener("click", function(evt) {
+            evt.preventDefault();
+
+            const targetID = evt.target.getAttribute("href").substring(1);
+            const targetLink = document.getElementById(targetID);
+
+            if (targetLink) {
+                targetLink.scrollIntoView({
+                    behavior: "smooth"
+                });
+            };
+        });
+    });
+};
+
+function mobileHeaderCustomLinks() {
+    const mobileHeader = document.querySelector(".mobile-menu");
+    const mobileHeaderLinks = mobileHeader.querySelectorAll(".mobile-menu-link");
+
+    mobileHeaderLinks.forEach((mobileHeaderLink) => {
+        mobileHeaderLink.addEventListener("click", function(evt) {
+            evt.preventDefault();
+
+            const targetID = evt.target.getAttribute("href").substring(1);
+            const targetLink = document.getElementById(targetID);
+
+            if (targetLink) {
+                targetLink.scrollIntoView({
+                    behavior: "smooth"
+                });
+            };
+        });
+    });
+};
+
 closeMobileMenuWhenMML();
 showMobileMenu();
 closeMobileMenu();
+
+mainHeadercustomLinks();
+mobileHeaderCustomLinks();
