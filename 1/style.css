@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-white-clr: #ffffff;
+    --main-white-clr-2: #e0e0e0;
+    --main-blue-clr: #1e40af;
+    --main-black-clr: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a,
+li,
+input,
+textarea {
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header-wrapper .right-col .menu .menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .reference-container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header-wrapper .middle-col,
+    .header-wrapper .right-col .cta {
+        display: none;
+    }
+
+    .header-wrapper .right-col .menu .menu-icon {
+        display: block;
+    }
+
+    .logo-content {
+        font-size: 30px;
+    }
+
+    .mobile-header.show {
+        transform: translateY(0);
+        transition: 1s ease-in-out;
+    }
+
+    .services-wrapper .heading-wrapper .main-heading {
+        font-size: 35px;
+    }
+
+    .services-wrapper .job-services .job-service {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .services-wrapper .job-services .job-service-photo {
+        width: 95%;
+    }
+
+    .services-wrapper .job-services .job-service-link {
+        top: 58%;
+        left: 45px;
+    }
+
+    .services-wrapper .job-services .job-service-description {
+        max-width: 95%;
+    }
+
+    .photo-wrapper .photo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-wrapper .main-heading,
+    .references-wrapper .main-heading {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+
+    .reference {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo-content {
+        font-size: 25px;
+    }
+
+    .hero-content .hero-main-heading {
+        font-size: 35px;
+    }
+
+    .services-wrapper {
+        margin-top: -70px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hero-content {
+        top: 2.5%;
+        left: 2.5%;
+        /* transform: translateY(-2.5%, -2.5%); */
+        transform: translate(-0.5%, -15%);
+    }
+
+    .hero-content .hero-main-heading {
+        font-size: 25px;
+        margin-top: 8px;
+        line-height: 1.4;
+    }
+
+    .hero-content .cta {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .hero-content .cta .hero-content-cta {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .services-wrapper .heading-wrapper .main-heading {
+        font-size: 25px;
+    }
+
+    .photo-gallery .main-heading {
+        font-size: 26px;
+    }
+
+    .prices-wrapper-table-data {
+        font-size: 12px;
+        text-wrap: balance;
+    }
+
+    .footer-wrapper-logo-photo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .footer-wrapper-copy {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo-content {
+        font-size: 30px;
+    }
+
+    .hero-content {
+        margin-top: 15%;
+    }
+
+    .hero-content .hero-upper-header {
+        font-size: 27px;
+    }
+
+    .hero-content .hero-main-heading {
+        font-size: 35px;
+    }
+
+    .hero-content .hero-subheading {
+        font-size: 22px;
+    }
+
+    .hero-content .cta {
+        margin-top: 15px;
+    }
+
+    .services-wrapper .job-services .job-service-link {
+        top: 50%;
+        left: 35px;
+    }
+
+    .photo-wrapper .photo {
+        height: 150px;
+        width: 150px;
+    }
+
+    .prices-wrapper-table-data {
+        padding: 4px 8px;
+    }
+
+    .prices-wrapper-cta {
+        font-size: 18px;
+    }
+}
+
+@media (hover: hover) {
+    .header-wrapper .middle-col .nav-items .nav-link:hover {
+        color: var(--main-blue-clr);
+    }
+
+    .header-wrapper .right-col .cta .cta-phone:hover {
+        transform: translateY(-10px);
+    }
+
+    .mobile-header-wrapper .mobile-nav-items .mobile-nav-item:hover {
+        background-color: var(--main-white-clr-2);
+    }
+
+    .hero-content .cta .cta-phone:hover {
+        transform: translateY(-10px);
+    }
+
+    .hero-content .cta .cta-offer:hover {
+        transform: translateY(-10px);
+    }
+
+    .form-group-title:hover {
+        color: #1e40af;
+    }
+}
