@@ -160,7 +160,7 @@ textarea {
 }
 
 @media screen and (max-width: 500px) {
-    .logo-content {
+    .logo-content .brand {
         font-size: 30px;
     }
 
@@ -200,6 +200,21 @@ textarea {
 
     .prices-wrapper-cta {
         font-size: 18px;
+    }
+
+    .form-wrapper .main-heading {
+        font-size: 25px;
+    }
+
+    .footer-wrapper-logo-photo {
+        height: 75px;
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo-content .brand {
+        font-size: 25px;
     }
 }
 
