@@ -216,6 +216,10 @@ textarea {
     .logo-content .brand {
         font-size: 25px;
     }
+
+    .prices-wrapper-table-data {
+        padding: 4px;
+    }
 }
 
 @media (hover: hover) {
