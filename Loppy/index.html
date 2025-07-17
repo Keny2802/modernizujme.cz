@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overscroll-none">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ondřej Lopaur | Online Fitnessák
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="overflow-x-hidden">
+
+    <div class="bg-black text-white sticky top-0 z-50 shadow-md header">
+        <div class="max-w-7xl mx-auto p-6 flex items-center justify-between header-wrapper">
+            <div class="logo-wrapper">
+                <a href="#" class="text-2xl font-bold tracking-wide text-emerald-400 logo-content">
+                    Ondřej Lopaur
+                </a>
+            </div>
+            <nav class="hidden md:flex gap-8 text-sm font-medium tracking-wider uppercase nav-items-wrapper">
+                <a href="#home" class="hover:text-emerald-400 transition nav-link">
+                    Domů
+                </a>
+                <a href="#about-me" class="hover:text-emerald-400 transition nav-link">
+                    O mně
+                </a>
+                <a href="#services" class="hover:text-emerald-400 transition nav-link">
+                    Služby
+                </a>
+                <a href="#glow-ups" class="hover:text-emerald-400 transition nav-link">
+                    Proměny
+                </a>
+                <a href="#faq" class="hover:text-emerald-400 transition nav-link">
+                    FAQ
+                </a>
+                <a href="#contact-me" class="hover:text-emerald-400 transition nav-link">
+                    Kontakt
+                </a>
+            </nav>
+            <a href="#contact-me" class="hidden md:inline-block bg-emerald-500 hover:bg-emerald-600 text-black font-semibold px-4 py-2 rounded-md transition nav-cta">
+                Začni hned
+            </a>
+            <div class="md:hidden focus:outline-none mobile-menu-wrapper">
+                <button class="mobile-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="md:hidden hidden px-6 pb-6 bg-black text-white mobile" id="mobile">
+            <nav class="flex flex-col gap-4 text-sm text-center leading-relaxed font-medium tracking-wide uppercase transition-all ease-in duration-1000 mobile-wrapper">
+                <a
+                href="#home"
+                class="hover:text-emerald-400 uppercase transition mobile-menu-link">
+                    Domů
+                </a>
+
+                <a
+                href="#about-me"
+                class="hover:text-emerald-400 uppercase transition mobile-menu-link">
+                    O mně
+                </a>
+
+                <a
+                href="#services"
+                class="hover:text-emerald-400 uppercase transition mobile-menu-link">
+                    Služby
+                </a>
+
+                <a
+                href="#glow-ups"
+                class="hover:text-emerald-400 uppercase transition mobile-menu-link">
+                    Proměny
+                </a>
+
+                <a
+                href="#faq"
+                class="hover:text-emerald-400 uppercase transition mobile-menu-link">
+                Faq
+                </a>
+
+                <a
+                href="#contact-me"
+                class="hover:text-emerald-400 uppercase transition mobile-menu-link">
+                    Kontakt
+                </a>
+
+                <a
+                href="#contact-me"
+                class="uppercase mt-4 bg-emerald-500 hover:bg-emerald-600 text-black text-center py-2 rounded transition mobile-menu-link mobile-menu-special-link">
+                    Začni hned
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="bg-black text-white py-32 px-6 hero" id="home">
+       <div class="max-w-5xl mx-auto text-center hero-wrapper">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight mb-6 hero-heading">
+                Vstup do světa
+                <span class="text-emerald-400 hero-heading-span-cover">
+                    sebekázně
+                </span>
+                a
+                <span class="text-emerald-400 hero-heading-span-cover">
+                    síly
+                </span>
+            </h1>
+            <p class="text-lg md:text-xl text-neutral-300 max-w-3xl mx-auto mb-10 leading-relaxed hero-sbuheading">
+                Jsem
+                <strong class="hero-subheading-strong-cover">
+                    Ondřej Lopaur
+                </strong>,
+                ale říkají mi Loppy. Pomáhám lidem dostat se do nejlepší formy života - fyzicky i mentálně.
+                Změň svoje tělo. Změň svůj mindset. Teď je tvoje chvíle.
+            </p>
+            <div class="flex justify-center flex-col gap-4 sm:flex-row motivation-content-wrapper">
+                <a
+                href="#contact-me"
+                class="bg-emerald-500 hover:bg-emerald-600 text-black font-semibold py-3 px-6 rounded shadow-md transition nav-link motivation-content-start-today-link">
+                    Začni dnes
+                </a>
+                <a
+                href="#my-path"
+                class="border border-white hover:border-emerald-500 hover:text-emerald-400 text-white py-3 px-6 rounded transition nav-link motivation-content-start-today-link">
+                    Moje cesta
+                </a>
+            </div>
+       </div>
+    </div>
+
+    <div class="bg-neutral-950 text-white py-24 px-6 about-me" id="about-me">
+        <div class="max-w-5xl mx-auto text-center about-me-wrapper">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 about-me-main-heading">
+                Kdo jsem
+            </h2>
+            <p class="text-neutral-300 text-lg leading-relaxed max-w-3xl mx-auto">
+                Jmenuju se Onřej Lopaur - Loppy. Nejsem kouzelník ani motivátor.
+                Jsem trenér, který věří v
+                <span class="text-emerald-400 font-semibold about-me-heading-span-cover">
+                    tvrdou práci, disciplínu a výsledky
+                </span>.
+                Vím, jaké to je být nespokojený ve svém těle. Sám jsem si tím prošel.
+                Teď pomáhám ostatním, kteří se rozhodli udělat změnu.
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-black text-white px-6 py-24 services" id="services">
+        <div class="max-w-6xl mx-auto text-center mb-12 services-wrapper">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 services-main-heading">
+                Co ti můžu nabídnout
+            </h2>
+            <p class="text-neutral-300 max-w-2xl mx-auto services-main-subheading">
+                Vyber si způsob spolupráce, který ti sedne nejvíc. Online, osobně
+                nebo jen plán - ale vždy se zaměřením na výsledek.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto services-content">
+
+            <div class="bg-neutral-900 p-6 rounded shadow-lg services-content-wrapper">
+                <h3 class="text-xl font-bold mb-2 text-emerald-400 services-content-wrapper-main-heading">
+                    Online coaching
+                </h3>
+                <p class="text-neutral-300 text-sm leading-relaxed services-content-wrapper-main-subheading">
+                    Každý týden nový plán, komunikace přes zprávy, vedení krok za krokem.
+                    Ideální pro samostatné, ale odhodlané.
+                </p>
+            </div>
+
+            <div class="bg-neutral-900 p-6 rounded shadow-lg services-content-wrapper">
+                <h3 class="text-xl font-bold mb-2 text-emerald-400 services-content-wrapper-main-heading">
+                    Tréninkový plán na míru
+                </h3>
+                <p class="text-neutral-300 text-sm leading-relaxed services-content-wrapper-main-subheading">
+                    Kompletní tréninkový plán sestavený přesně pro tvoje cíle, možnosti a vybavení.
+                    Žádný univerzál.
+                </p>
+            </div>
+
+            <div class="bg-neutral-900 p-6 rounded shadow-lg services-content-wrapper">
+                <h3 class="text-xl font-bold mb-2 text-emerald-400 services-content-wrapper-main-heading">
+                    Stravovací plán na míru
+                </h3>
+                <p class="text-neutral-300 text-sm leading-relaxed services-content-wrapper-main-subheading">
+                    Jídlo je klíč. Sestavím ti stravovací plán tak, abys měl energii,
+                    budoval svaly nebo shazoval tuk - a neběžěl na salátu.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-neutral-950 text-white py-24 px-6 glow-ups" id="glow-ups">
+
+        <div class="max-w-5xl mx-auto text-center mb-12 glow-ups-wrapper">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 glow-ups-main-heading">
+                Proměny klientů
+            </h2>
+            <p class="text-neutral-300 max-w-2xl mx-auto glow-ups-main-subheading">
+                Reálné výsledky lidí, kteří se rozhodli makat. Žádné triky. Jen práce
+                a disciplína.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto glow-ups-content">
+            <div class="bg-neutral-900 p-6 rounded shadow-md space-y-2 client-glow-up-content-wrapper">
+                <h3 class="text-xl font-semibold text-emerald-400 client-glow-up-content-wrapper-main-heading">
+                    Tomáš (32)
+                </h3>
+                <p class="text-sm text-neutral-400 client-glow-up-content-wrapper-main-subheading">
+                    👨 Muž • 6 měsíců tréninku
+                </p>
+                <p class="text-neutral-300 text-sm leading-relaxed client-glow-up-content-wrapper-main-subheading">
+                    Tomáš shodil 11 kg tuku, naučil se jíst vyváženě a zvedá téměř dvojnásobek své váhy. Nikdy předtím necvičil.
+                </p>
+            </div>
+
+            <div class="bg-neutral-900 p-6 rounded shadow-md space-y-2 client-glow-up-content-wrapper">
+                <h3 class="text-xl font-semibold text-emerald-400 client-glow-up-content-wrapper-main-heading">
+                    Kristýna (25)
+                </h3>
+                <p class="text-sm text-neutral-400 client-glow-up-content-wrapper-main-subheading">
+                    👩 Žena • 4 měsíce spolupráce
+                </p>
+                <p class="text-neutral-300 text-sm leading-relaxed client-glow-up-content-wrapper-main-subheading">
+                    Získala pevné břicho, energii a sebevědomí zpět. Cvičí doma a vše jí upravujeme na míru podle cyklu.
+                </p>
+            </div>
+
+            <div class="bg-neutral-900 p-6 rounded shadow-md space-y-2 client-glow-up-content-wrapper">
+                <h3 class="text-xl font-semibold text-emerald-400 client-glow-up-content-wrapper-main-heading">
+                    Lukáš (41)
+                </h3>
+                <p class="text-sm text-neutral-400 client-glow-up-content-wrapper-main-subheading">
+                    👨 Muž • 8 týdnů online
+                </p>
+                <p class="text-neutral-300 text-sm leading-relaxed client-glow-up-content-wrapper-main-subheading">
+                    Začal s 0 kondicí. Dnes zvládne 100 kliků denně, cítí se zdravější než kdykoli předtím. Změna myšlení i těla.
+                </p>
+            </div>
+
+            <div class="bg-neutral-900 p-6 rounded shadow-md space-y-2 client-glow-up-content-wrapper">
+                <h3 class="text-xl font-semibold text-emerald-400 client-glow-up-content-wrapper-main-heading">
+                    Simona (36)
+                </h3>
+                <p class="text-sm text-neutral-400 client-glow-up-content-wrapper-main-subheading">
+                    👩 Žena • 3 měsíce
+                </p>
+                <p class="text-neutral-300 text-sm leading-relaxed client-glow-up-content-wrapper-main-subheading">
+                    Po dvou dětech se bála začít. Teď má sílu i čas pro sebe. Tréninky ji baví a má zpět svoji postavu.
+                </p>
+            </div>
+
+            <div class="bg-neutral-900 p-6 rounded shadow-md space-y-2 client-glow-up-content-wrapper">
+                <h3 class="text-xl font-semibold text-emerald-400 client-glow-up-content-wrapper-main-heading">
+                    David (19)
+                </h3>
+                <p class="text-sm text-neutral-400 client-glow-up-content-wrapper-main-subheading">
+                    👨 Muž • 5 měsíců
+                </p>
+                <p class="text-neutral-300 text-sm leading-relaxed client-glow-up-content-wrapper-main-subheading">
+                    Mladý kluk, který chtěl změnit postavu i sebedůvěru. Začali jsme doma s vlastní vahou. Teď jede na maximum.
+                </p>
+            </div>
+
+            <div class="bg-neutral-900 p-6 rounded shadow-md space-y-2 client-glow-up-content-wrapper">
+                <h3 class="text-xl font-semibold text-emerald-400 client-glow-up-content-wrapper-main-heading">
+                    Monika (29)
+                </h3>
+                <p class="text-sm text-neutral-400 client-glow-up-content-wrapper-main-subheading">
+                    👩 Žena • 12 týdnů
+                </p>
+                <p class="text-neutral-300 text-sm leading-relaxed client-glow-up-content-wrapper-main-subheading">
+                    Cílem bylo „shodit boky“, ale získala mnohem víc - silnější jádro, pravidelnost a zdravější vztah ke cvičení.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bg-black text-white px-6 py-24 faq" id="faq">
+
+        <div class="max-w-4xl mx-auto text-center mb-12 faq-wrapper">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 faq-main-heading">
+                Nejčastější otázky
+            </h2>
+            <p class="text-neutral-300 faq-main-subheading">
+                Nevíš, jestli je to pro tebe? Možná ti pomůže tahle sekce.
+            </p>
+        </div>
+
+        <div class="space-y-6 max-w-3xl mx-auto faq-content">
+
+            <div class="bg-neutral-900 p-6 rounded faq-content-wrapper">
+                <h3 class="text-lg font-semibold mb-2 text-emerald-400 faq-content-wrapper-main-heading">
+                    Je to i pro začátečníky?
+                </h3>
+                <p class="text-neutral-300 text-sm leading-relaxed faq-content-wrapper-main-subheading">
+                    Ano. Vše je sestaveno podle tvojí aktuální úrovně - nemusíš mít žádné zkušenosti.
+                </p>
+            </div>
+            <div class="bg-neutral-900 p-6 rounded faq-content-wrapper">
+                <h3 class="text-lg font-semibold mb-2 text-emerald-400 faq-content-wrapper-main-heading">
+                    Mám jen domácí vybavení. Stačí to?
+                </h3>
+                <p class="text-neutral-300 text-sm leading-relaxed faq-content-wrapper-main-subheading">
+                    Rozhodně. Dokážu vytvořit efektivní plán i z minima - hlavní je tvoje vůle makat.
+                </p>
+            </div>
+            <div class="bg-neutral-900 p-6 rounded faq-content-wrapper">
+                <h3 class="text-lg font-semibold mb-2 text-emerald-400 faq-content-wrapper-main-heading">
+                    Jak probíhá spolupráce?
+                </h3>
+                <p class="text-neutral-300 text-sm leading-relaxed faq-content-wrapper-main-subheading">
+                    Po konzultaci ti připravím plán, vše vysvětlím a každý týden se posouváme dál.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bg-neutral-950 text-white px-6 py-24 contact" id="contact-me">
+        <div class="max-w-3xl mx-auto text-center contact-wrapper">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 contact-wrapper-main-heading">
+                Jdeš do toho?
+            </h2>
+            <p class="text-neutral-300 mb-8 contact-wrapper-main-subheading">
+                Napiš mi zprávu a začni cestu, kterou nebudeš litovat.
+            </p>
+            <a
+            href="mailto:info@loppytrener.cz"
+            class="bg-emerald-500 hover:bg-emerald-600 text-black font-bold px-8 py-3 rounded-md shadow-md transition contact-wrapper-contact-link"
+            target="_blank">
+                Napiš mi
+            </a>
+        </div>
+    </div>
+
+    <footer class="bg-black textwhite px-4 py-12 md:px-20 footer">
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 footer-wrapper">
+            <div class="footer-content-wrapper">
+                <h2 class="text-2xl font-bold tracking-wide footer-content-wrapper-main-heading">
+                    Loppy
+                </h2>
+                <p class="mt-2 text-sm text-gray-400 footer-content-wrapper-main-subheading">
+                    Tvoje cesta za lepší postavou a myslí.
+                </p>
+            </div>
+
+            <div class="footer-content-wrapper">
+                <h3 class="text-lg font-semibold mb-3 footer-content-wrapper-submain-heading">
+                    Navigace
+                </h3>
+                <ul class="space-y-2 text-sm text-gray-400 footer-content-wrapper-nav-list">
+                    <li class="footer-content-wrapper-nav-item">
+                        <a
+                        href="#home"
+                        class="hover:text-white uppercase transition footer-content-wrapper-nav-link">
+                            domů
+                        </a>
+                    </li>
+                    <li class="footer-content-wrapper-nav-item">
+                        <a
+                        href="#about-me"
+                        class="hover:text-white uppercase transition footer-content-wrapper-nav-link">
+                            o mně
+                        </a>
+                    </li>
+                    <li class="footer-content-wrapper-nav-item">
+                        <a
+                        href="#services"
+                        class="hover:text-white uppercase transition footer-content-wrapper-nav-link">
+                            služby
+                        </a>
+                    </li>
+                    <li class="footer-content-wrapper-nav-item">
+                        <a
+                        href="#glow-ups"
+                        class="hover:text-white uppercase transition footer-content-wrapper-nav-link">
+                            proměny
+                        </a>
+                    </li>
+                    <li class="footer-content-wrapper-nav-item">
+                        <a
+                        href="#faq"
+                        class="hover:text-white uppercase transition footer-content-wrapper-nav-link">
+                            faq
+                        </a>
+                    </li>
+                    <li class="footer-content-wrapper-nav-item">
+                        <a
+                        href="#contact-me"
+                        class="hover:text-white uppercase transition footer-content-wrapper-nav-link">
+                            kontakt
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-content-wrapper">
+                <h3 class="text-lg font-semibold mb-3 footer-content-wrapper-submain-heading">
+                    Kontakt
+                </h3>
+                <p class="text-sm text-gray-400 footer-content-wrapper-contact-info">
+                    Email:
+                    <a
+                    href="mailto:info@loppytrener.cz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:text-white footer-content-wrapper-contact-info-link">
+                        info@loppytrener.cz
+                    </a>
+                </p>
+                <p class="text-sm text-gray-400 mt-1 footer-content-wrapper-contact-special-info footer-content-wrapper-contact-info">
+                    Instagram:
+                    <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:text-white footer-content-wrapper-contact-info-special-link footer-content-wrapper-contact-info-link">
+                        @loppy.trener
+                    </a>
+                </p>
+                <p class="text-sm text-gray-400 mt-1 footer-content-wrapper-contact-special-info footer-content-wrapper-contact-info">
+                    TikTok:
+                    <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hover:text-white footer-content-wrapper-contact-info-special-link footer-content-wrapper-contact-info-link">
+                        @loppy.fit
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-10 border-t border-gray-800 pt-6 text-center text-sm text-gray-500 footer-content-wrapper-out-footer-wrapper">
+            <p class="footer-content-wrapper-out-footer-wrapper-text-content">
+                &copy;
+                <span class="year" id="year"></span>
+                Loppy.
+                Všechna práva vyhrazena.
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
