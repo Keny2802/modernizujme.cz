@@ -1,4 +1,6 @@
 let isOpened = false;
+let isContentOpened = false;
+let isSelectOptionClicked = false;
 
 const body = document.body;
 
@@ -8,6 +10,9 @@ const mobileMenuToggle = document.querySelector(".mobile-header-icon");
 const serviceContainer = document.querySelector(".services-wrapper");
 const clientsChooseCTA = document.querySelector(".client-choose-property");
 const clientsSelectContainer = document.querySelector(".clients-select-container");
+const clientSelectOptions = clientsSelectContainer.querySelectorAll(".clients-select-option");
+const showUpNextFieldCTA = document.querySelector(".show-up-next-content-field");
+const showUpNextContent = document.querySelector(".next-content-to-show-up");
 
 function customSiteNavLinks() {
     const siteNavLinks = document.querySelectorAll(".nav-link");
@@ -73,11 +78,35 @@ mobileMenuToggle.addEventListener("click", function(evt) {
     body.style.overflowY = !mobileMenu.classList.contains("show") ? "auto" : "hidden";
 });
 
+showUpNextFieldCTA.addEventListener("click", function(evt) {
+    isContentOpened = !isContentOpened;
+    const showUpNextFieldCTAICON = showUpNextFieldCTA.querySelector(".bx-plus, .bx-minus");
+    const showUpNextFieldCTASpanText = showUpNextFieldCTA.querySelector(".show-up-next-content-field-text-span");
+
+    showUpNextContent.style.display = isContentOpened ? "block" : "none";
+
+    showUpNextFieldCTAICON.classList.toggle("bx-plus", !isContentOpened);
+    showUpNextFieldCTAICON.classList.toggle("bx-minus", isContentOpened);
+
+    showUpNextFieldCTASpanText = isContentOpened ? "Skrýt další pole" : "Zobrazit další pole";
+});
+
 clientsChooseCTA.addEventListener("click", function(evt) {
+    const target = evt.target;
     isOpened = !isOpened;
     evt.preventDefault();
 
     clientsSelectContainer.style.opacity = isOpened ? "1" : "0";
+});
+
+clientSelectOptions.forEach((selectOption) => {
+    selectOption.addEventListener("click", function(evt) {
+        isSelectOptionClicked = !isSelectOptionClicked;
+        const target = evt.target;
+
+        clientsSelectContainer.style.opacity = isSelectOptionClicked ? "0" : "0";
+        clientsChooseCTA.textContent = target.textContent;
+    });
 });
 
 document.addEventListener("DOMContentLoaded", function(evt) {

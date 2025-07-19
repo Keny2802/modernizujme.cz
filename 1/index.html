@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth overscroll-none">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>
         Malíři PROFI | David Telvak
     </title>
@@ -72,6 +72,11 @@
                     <li class="nav-item">
                         <a href="#contact" class="transition-all duration-300 ease-in nav-link">
                             Kontakt
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="transition-all duration-300 ease-in nav-link">
+                            O nás
                         </a>
                     </li>
                 </ul>
@@ -148,6 +153,11 @@
                 <li class="p-[12px] w-full text-center cursor-pointer transition-all duration-300 ease-in-out shadow-[0_7px_29px_0px_rgba(100,100,111,0.2)] mobile-nav-item">
                     <a href="#contact" class="mobile-nav-link">
                         Kontakt
+                    </a>
+                </li>
+                <li class="p-[12px] w-full text-center cursor-pointer transition-all duration-300 ease-in-out shadow-[0_7px_29px_0px_rgba(100,100,111,0.2)] mobile-nav-item">
+                    <a href="#about" class="mobile-nav-link">
+                        O nás
                     </a>
                 </li>
             </ul>
@@ -882,7 +892,7 @@
                 </h3> -->
                 <div class="form-groups">
                     <div class="flex flex-col mt-[15px] pb-1 border-b border-gray-200 form-group">
-                        <label for="first-and-last-name" class="text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
+                        <label for="first-and-last-name" class="inline-block text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
                             Jméno a Příjmení
                         </label>
                         <input type="text" class="bg-[#39393e] text-[#ffffff] outline-none p-[10px] rounded-[3px] mt-[8px] tracking-[0.65px] capitalize focus:ring-blue-500 form-group-field"
@@ -892,7 +902,7 @@
                         </p>
                     </div>
                     <div class="flex flex-col mt-[15px] pb-1 border-b border-gray-200 form-group">
-                        <label for="client-email" class="capitalize text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
+                        <label for="client-email" class="inline-block capitalize text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
                             váš email
                         </label>
                         <input type="email" id="client-email"
@@ -903,7 +913,7 @@
                         </p>
                     </div>
                     <div class="flex flex-col mt-[15px] form-group">
-                        <label for="client-phone-number" class="capitalize text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
+                        <label for="client-phone-number" class="inline-block capitalize text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
                             vaše telefonní číslo
                         </label>
                         <input type="tel" id="client-phone-number"
@@ -914,7 +924,7 @@
                         </p>
                     </div>
                     <div class="flex flex-col mt-[15px] pt-1 pb-1 border-t border-b border-gray-200 form-group">
-                        <label for="clients-place" class="text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
+                        <label for="clients-place" class="inline-block text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
                             Adresa zakázky
                         </label>
                         <input type="text" id="clients-place"
@@ -926,25 +936,25 @@
                     </div>
 
                     <div class="hidden next-content-to-show-up">
-                        <div class="flex flex-col mt-[15px] pb-1 border-b border-gray-200 opacity-0 next-form-group-to-show-up form-group">
-                            <label for="clients-property" class="text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
+                        <div class="flex flex-col mt-[15px] pb-1 border-b border-gray-200 next-form-group-to-show-up form-group">
+                            <label for="clients-property" class="inline-block text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
                                 Typ objektu
                             </label>
                             <div class="relative inline-block w-64">
                                 <button class="bg-[#39393e] w-full border border-gray-300 px-4 text-[#9ca3af] text-left rounded capitalize mt-[15px] p-[10px] client-choose-property">
                                     vyberte typ objektu
                                 </button>
-                                <ul class="absolute left-0 right-0 bg-white border border-gray-300 rounded mt-1 z-10 opacity-0 clients-select-container">
-                                    <li class="px-4 py-2 cursor-pointer hover:bg-[#39393e] hover:text-[#ffffff]">
+                                <ul class="absolute left-0 right-0 bg-white border border-gray-300 rounded mt-1 z-10 clients-select-container">
+                                    <li class="px-4 py-2 cursor-pointer hover:bg-[#39393e] hover:text-[#ffffff] clients-select-option">
                                         Byt
                                     </li>
-                                    <li class="px-4 py-2 cursor-pointer hover:bg-[#39393e] hover:text-[#ffffff]">
+                                    <li class="px-4 py-2 cursor-pointer hover:bg-[#39393e] hover:text-[#ffffff] clients-select-option">
                                         Dům
                                     </li>
-                                    <li class="px-4 py-2 cursor-pointer hover:bg-[#39393e] hover:text-[#ffffff]">
+                                    <li class="px-4 py-2 cursor-pointer hover:bg-[#39393e] hover:text-[#ffffff] clients-select-option">
                                         Kancelář
                                     </li>
-                                    <li class="px-4 py-2 cursor-pointer hover:bg-[#39393e] hover:text-[#ffffff]">
+                                    <li class="px-4 py-2 cursor-pointer hover:bg-[#39393e] hover:text-[#ffffff] clients-select-option">
                                         Nebytový prostor
                                     </li>
                                 </ul>
@@ -953,8 +963,8 @@
                                 Nepovinné
                             </p>
                         </div>
-                        <div class="flex flex-col mt-[15px] pb-1 border-b border-gray-200 opacity-0 next-form-group-to-show-up form-group">
-                            <label class="text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
+                        <div class="flex flex-col mt-[15px] pb-1 border-b border-gray-200 next-form-group-to-show-up form-group">
+                            <label class="inline-block text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
                                 Fotky zakázky
                             </label>
                             <div class="flex justify-center items-center gap-[20px] bg-[#39393e] p-[20px] h-[120px] mt-[8px] rounded-[3px] form-group-clients-photos">
@@ -977,8 +987,8 @@
                                 Nepovinné
                             </p>
                         </div>
-                        <div class="flex flex-col mt-[15px] opacity-0 next-form-group-to-show-up form-group">
-                            <label for="clients-work-description" class="text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
+                        <div class="flex flex-col mt-[15px] next-form-group-to-show-up form-group">
+                            <label for="clients-work-description" class="inline-block text-[20px] cursor-pointer transition-all duration-300 ease-in form-group-title">
                                 Popis Zakázky
                             </label>
                             <textarea id="clients-work-description"
@@ -1147,10 +1157,126 @@
                 </div>
             </div>
             </div>
+            <div class="mt-4 google-container">
+                <svg class="lJpQBb" aria-label="Přejít na hlavní stránku Google" height="24" width="24" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <clipPath id="_Sa1zaIDCBOGGxc8P5t30CQ_5">
+                        <path d="M12 10v4.5h6.47c-.5 2.7-3 4.74-6.47 4.74-3.9 0-7.1-3.3-7.1-7.25S8.1 4.75 12 4.75c1.8 0 3.35.6 4.6 1.8l3.4-3.4C18 1.2 15.24 0 12 0 5.4 0 0 5.4 0 12s5.4 12 12 12c7 0 11.5-4.9 11.5-11.7 0-.8-.1-1.54-.2-2.3H12z"></path>
+                    </clipPath>
+                    <filter id="_Sa1zaIDCBOGGxc8P5t30CQ_6">
+                        <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+                    </filter>
+                    <g style="clip-path:url(#_Sa1zaIDCBOGGxc8P5t30CQ_5)">
+                        <foreignObject style="filter:url(#_Sa1zaIDCBOGGxc8P5t30CQ_6)" height="28" transform="translate(-2,-2)" width="28">
+                            <div style="width:100%;height:100%;background:conic-gradient(#FF4641,#FD5061 40deg,#FD5061 60deg,#3186FF 85deg,#3186FF 117deg,#00A5B7 142deg,#0EBC5F 167deg,#0EBC5F 200deg,#6CC500 226deg,#FFCC00 253deg,#FFD314 268deg,#FFCC00 292deg,#FF4641 327deg)"></div>
+                        </foreignObject>
+                        <rect fill="#3186FF" height="8" width="16" x="11" y="8"></rect>
+                    </g>
+                </svg>
+            </div>
         </div>
     </div>
-    <div class="contact" id="contact">
-        <div class="contact-wrapper"></div>
+    <div class="bg-white shadow-[0_5px_15px_rgba(0,0,0,0.35)] p-[20px] contact" id="contact">
+        <div class="contact-wrapper">
+            <p class="text-[20px] font-bold uppercase tracking-[0.65px] text-[#1e40af] upper-heading">
+                Kontakt
+            </p>
+            <h3 class="text-[35px] mt-[10px] main-heading">
+                Kontaktujte nás kdykoliv, každý všední den od 08:00 - 17:00
+            </h3>
+            <div class="text-center space-y-2 mt-8 leading-[2]">
+                <p class="text-lg">
+                    📞
+                    <a href="tel:+420737171208" target="_blank" class="text-[#1e40af] hover:underline font-medium">
+                        +420 737 171 208
+                    </a>
+                </p>
+                <p class="text-lg">
+                    ✉️
+                    <a href="mailto:info@maliriprofi.cz" class="text-[#1e40af] hover:underline font-medium">
+                        info@maliriprofi.cz
+                    </a>
+                </p>
+                <p class="text-gray-700">
+                    📍Maňákova 20, 190 00 Praha 9
+                </p>
+                <p class="text-sm text-gray-500">
+                    Po-Pá: 8:00-17:00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white shadow-[0px_8px_24px_rgba(149,157,165,0.2)] about" id="about">
+        <div class="p-[20px] about-wrapper">
+            <p class="flex justify-between items-center text-xl font-bold uppercase tracking-wide text-[#1e40af] main-upper-heading">
+                <span class="main-upper-heading-text">
+                    o nás
+                </span>
+                <img
+                src="sources/Logo.png"
+                alt="David Telvak - Logo"
+                loading="lazy"
+                decoding="async"
+                class="h-[100px] w-[100px] about-wrapper-logo-photo">
+            </p>
+            <h3 class="text-[30px] font-bold mt-4 leading-tight main-heading">
+                Kdo jsme a co děláme
+            </h3>
+            <div class="about-wrapper-content">
+                <p class="text-lg leading-relaxed my-4 about-wrapper-content-about-us-text">
+                    Jsme rodinná firma malířů s více než 25 lety zkušeností. Malujeme interiéry i exteriéry s důrazem na kvalitu a preciznost.
+                </p>
+                <p class="text-lg leading-relaxed about-wrapper-content-about-us-text">
+                    Naším cílem je spokojenost zákazníků, proto používáme jen ověřené materiály a moderní technologie. Každý projekt bereme jako výzvu a zakládáme si na pečlivé práci.
+                </p>
+                <p class="text-lg leading-relaxed my-4 about-wrapper-content-about-us-text">
+                    Rádi Vám poradíme a pomůžeme s výběrem barev i technik, aby váš domov získal nový svěží vzhled.
+                </p>
+                <div class="reference-sample-container">
+                    <div class="reference-sample-wrapper">
+                        <p class="italic text-lg text-gray-800 reference-sample-text">
+                            “Spolupráce s panem malířem byla výborná. Vše proběhlo rychle, čistě a výsledek předčil očekávání.”
+                        </p>
+                        <p class="mt-2 font-semibold text-xl text-[#1e40af] tracking-wide reference-sample-author-text">
+                            Filip Oliva
+                        </p>
+                    </div>
+                </div>
+                <div class="bussiness-since-wrapper">
+                    <h2 class="border-t border-gray-200 mt-4 pt-2 font-semibold text-[#1e40af] text-2xl uppercase -tracking-[1px] bussiness-since-main-heading">
+                        Časová osa naší firmy
+                    </h2>
+                    <div class="border-l-4 border-[#1e40af] bussiness-since-container">
+                        <div class="mx-2 my-2 bussiness-wrapper">
+                            <p class="text-sm text-gray-500">
+                                1999
+                            </p>
+                            <p class="font-semibold text-gray-800">
+                                Založení firmy
+                            </p>
+                        </div>
+                        <div class="mx-2 my-2 bussiness-wrapper">
+                            <p class="text-sm text-gray-500">
+                                2010
+                            </p>
+                            <p class="font-semibold text-gray-800">
+                                Rozšíření a fasádní práce
+                            </p>
+                        </div>
+                        <div class="mx-2 my-2 bussiness-wrapper">
+                            <p class="text-sm text-gray-500">
+                                2024
+                            </p>
+                            <p class="font-semibold text-gray-800">
+                                Více než 1000 spokojených klientů
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact" class="my-6 inline-block w-full px-6 py-3 bg-[#1e40af] tracking-wide font-extrabold text-2xl text-white rounded hover:bg-blue-700 transition about-wrapper-cta">
+                    Kontaktujte nás
+                </a>
+            </div>
+        </div>
     </div>
     <div class="bg-[#ffffff] shadow-[rgba(0,0,0,0.35)_0px_5px_15px] footer">
         <div class="flex flex-col items-center footer-wrapper">

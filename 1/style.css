@@ -91,6 +91,10 @@ textarea {
         line-height: 1.4;
     }
 
+    .contact-wrapper .main-heading {
+        font-size: 30px;
+    }
+
     .reference {
         width: 100%;
     }
