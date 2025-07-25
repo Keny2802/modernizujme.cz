@@ -14,4 +14,8 @@
     .hero-actions {
         flex-direction: column;
     }
+
+    .mobile-header .logo {
+        font-size: 24px;
+    }
 }
