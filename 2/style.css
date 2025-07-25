@@ -1,0 +1,17 @@
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .navigation-link {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+}
