@@ -2,6 +2,11 @@
     display: none;
 }
 
+.active-tab {
+    background: #2563eb;
+    color: #ffffff;
+}
+
 @media screen and (max-width: 800px) {
     .navigation-link {
         display: none;

@@ -12,7 +12,7 @@
 </head>
 <body class="bg-white text-black font-sans overflow-x-hidden">
 
-    <header class="bg-white border-b border-gray-300 p-4 md:p-5 header" id="header">
+    <header class="bg-white border-b border-gray-200 p-4 md:p-5 header" id="header">
         <div class="max-w-[1100px] mx-auto flex justify-between items-center flex-wrap header-wrapper">
             <div class="text-2xl font-black tracking-tight logo">
                 <p class="cursor-pointer logo-content">
@@ -77,9 +77,10 @@
 
     <section class="bg-white px-6 py-24 hero" id="hero">
         <div class="max-w-6xl mx-auto hero-wrapper">
-            <h1 class="text-4xl font-bold mb-3 hero-main-heading section-main-heading">
+            <h1 class="text-4xl font-bold mb-3 sm:text-3xl hero-main-heading section-main-heading">
                 Profesionální správa nemovitostí
             </h1>
+            <p class="text-xl text-blue-800 mb-2 font-semibold min-h-[1.5em] hero-tagline" id="tagline"></p>
             <p class="text-xl text-gray-600 mb-2 hero-main-subheading section-main-subheading">
                 Moderní software pro správu bytů, nájemníků a vyúčtování. Rychle, jednoduše, bezpečně.
             </p>
@@ -125,7 +126,7 @@
 
     <section class="bg-white px-6 py-24 border-t border-gray-200 features" id="features">
         <div class="max-w-6xl mx-auto features-wrapper">
-            <h2 class="text-4xl font-bold tracking-tight text-black mb-4 features-main-heading section-main-heading">
+            <h2 class="text-4xl font-bold tracking-tight text-black mb-4 sm:text-3xl features-main-heading section-main-heading">
                 Co všechno umí?
             </h2>
             <p class="text-lg text-gray-600 mb-10 max-w-2xl features-main-subheading section-main-subheading">
@@ -242,7 +243,7 @@
                     2 500+
                 </p>
                 <p class="stats-data">
-                    Nmovitostí ve správě
+                    Nemovitostí ve správě
                 </p>
             </div>
             <div class="stats-box">
@@ -264,9 +265,9 @@
         </div>
     </section>
 
-    <section class="bg-white px-6 py-24 border-t border-neutral-200 use-case">
+    <section class="bg-white px-6 py-24 border-t border-gray-200 use-case">
         <div class="max-w-6xl mx-auto text-center use-case-wrapper">
-            <h2 class="text-3xl font-extrabold mb-8 use-case-main-heading section-main-heading">
+            <h2 class="text-4xl font-extrabold mb-8 sm:text-3xl use-case-main-heading section-main-heading">
                 Pro koho je tento nástroj?
             </h2>
 
@@ -355,9 +356,190 @@
         </div>
     </section>
 
-    <section class="bg-white px-6 py-24 border-t border-neutral-200 how-it-works">
+    <section class="bg-white px-6 py-24 border-t border-gray-200 pricing" id="pricing">
+        <div class="max-w-6xl mx-auto text-center pricing-wrapper">
+            <h2 class="text-4xl font-extrabold mb-6 sm:text-3xl pricing-main-heading main-section-heading">
+                Ceník
+            </h2>
+            <p class="text-gray-600 mb-12 pricing-main-subheading main-section-subheading">
+                Vyber si plán, který ti sedne. Měsíčně nebo ročně - jak chceš.
+            </p>
+
+            <div class="flex justify-center mb-10 spaxe-x-4 gap-4 pricing-plan-tabs">
+                <button class="px-4 py-2 border rounded-full font-medium text-sm hover:bg-blue-600 hover:text-white transition duration-300 tab-btn active" id="monthly-tab">
+                    Měsíčně
+                </button>
+                <button class="px-4 py-2 border rounded-full font-medium text-sm hover:bg-blue-600 hover:text-white transition duration-300 tab-btn" id="annually-tab">
+                    Ročně (Výhodněji)
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 monthly-plans" id="monthly-plans">
+
+                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition monthly-plan">
+                    <h3 class="text-xl font-bold mb-2">
+                        Základní
+                    </h3>
+                    <p class="text-gray-500 mb-4">
+                        Pro jednotlivce a malé pronajímatele.
+                    </p>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4">
+                        390 Kč
+                    </p>
+                    <ul class="text-left mb-6 space-y-2 text-gray-700">
+                        <li class="monthly-plan-list-item">
+                            ✅ 3 nemovitosti
+                        </li>
+                        <li class="monthly-plan-list-item">
+                            ✅ Evidence nájemníků
+                        </li>
+                        <li class="monthly-plan-list-item">
+                            ✅ Upozornění na platby
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded monthly-plan-cta">
+                        Začít
+                    </a>
+                </div>
+
+                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition monthly-plan">
+                    <h3 class="text-xl font-bold mb-2">
+                        Pro
+                    </h3>
+                    <p class="text-gray-500 mb-4">
+                        Ideální pro menší správce nebo investory.
+                    </p>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4">
+                        790 Kč
+                    </p>
+                    <ul class="text-left mb-6 space-y-2 text-gray-700">
+                        <li class="monthly-plan-list-item">
+                            ✅ 15 nemovitostí
+                        </li>
+                        <li class="monthly-plan-list-item">
+                            ✅ Vlastní branding
+                        </li>
+                        <li class="monthly-plan-list-item">
+                            ✅ Exporty do PDF
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded monthly-plan-cta">
+                        Vyzkoušet
+                    </a>
+                </div>
+
+                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition monthly-plan">
+                    <h3 class="text-xl font-bold mb-2">
+                        Týmový
+                    </h3>
+                    <p class="text-gray-500 mb-4">
+                        Pro realitní kanceláře a developery.
+                    </p>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4">
+                        1490 Kč
+                    </p>
+                    <ul class="text-left mb-6 space-y-2 text-gray-700">
+                        <li class="monthly-plan-list-item">
+                            ✅ Neomezeně nemovitostí
+                        </li>
+                        <li class="monthly-plan-list-item">
+                            ✅ Týmová spolupráce
+                        </li>
+                        <li class="monthly-plan-list-item">
+                            ✅ Prioritní podpora
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded monthly-plan-cta">
+                        Kontaktovat
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hidden grid grid-cols-1 md:grid-cols-3 gap-8 annually-plans" id="annually-plans">
+                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition annually-plan">
+                    <h3 class="text-xl font-bold mb-2">
+                        Základní
+                    </h3>
+                    <p class="text-gray-500 mb-4">
+                        Pro jednotlivce a malé pronajímatele.
+                    </p>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4">
+                        3 900 Kč / rok
+                    </p>
+                    <ul class="text-left mb-6 space-y-2 text-gray-700">
+                        <li class="annually-plan-list-item">
+                            ✅ 3 nemovitosti
+                        </li>
+                        <li class="annually-plan-list-item">
+                            ✅ Evidence nájemníků
+                        </li>
+                        <li class="annually-plan-list-item">
+                            ✅ Upozornění na platby
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded annually-plan-cta">
+                        Začít
+                    </a>
+                </div>
+                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition annually-plan">
+                    <h3 class="text-xl font-bold mb-2">
+                        Pro
+                    </h3>
+                    <p class="text-gray-500 mb-4">
+                        Ideální pro menší správce nebo investory.
+                    </p>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4">
+                        7 900 Kč / rok
+                    </p>
+                    <ul class="text-left mb-6 space-y-2 text-gray-700">
+                        <li class="annually-plan-list-item">
+                            ✅ 15 nemovitostí
+                        </li>
+                        <li class="annually-plan-list-item">
+                            ✅ Vlastní branding
+                        </li>
+                        <li class="annually-plan-list-item">
+                            ✅ Exporty do PDF
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded annually-plan-cta">
+                        Vyzkoušet
+                    </a>
+                </div>
+                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition annually-plan">
+                    <h3 class="text-xl font-bold mb-2">
+                        Týmový
+                    </h3>
+                    <p class="text-gray-500 mb-4">
+                        Pro realitní kanceláře a developery.
+                    </p>
+                    <p class="text-3xl font-extrabold text-blue-600 mb-4">
+                        14 900 Kč / rok
+                    </p>
+                    <ul class="text-left mb-6 space-y-2 text-gray-700">
+                        <li class="annually-plan-list-item">
+                            ✅ Neomezeně nemovitostí
+                        </li>
+                        <li class="annually-plan-list-item">
+                            ✅ Týmová spolupráce
+                        </li>
+                        <li class="annually-plan-list-item">
+                            ✅ Prioritní podpora
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded annually-plan-cta">
+                        Kontaktovat
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-white px-6 py-24 border-t border-gray-200 how-it-works">
         <div class="max-w-6xl mx-auto text-center how-it-works-wrapper">
-            <h2 class="text-3xl font-extrabold mb-8 how-it-works-main-heading section-main-heading">
+            <h2 class="text-4xl font-extrabold mb-8 sm:text-3xl how-it-works-main-heading section-main-heading">
                 Jak software funguje?
             </h2>
             <div class="grid md:grid-cols-3 gap-6 text-left how-it-works-boxes">
@@ -405,6 +587,20 @@
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="bg-white px-6 py-24 border-t border-gray-200 contact-cta">
+        <div class="max-w-6xl mx-auto text-center contact-cta-wrapper">
+            <h2 class="text-4xl font-extrabold mb-4 sm:text-3xl contact-cta-main-heading main-section-heading">
+                Připraven zjednodušit správu nemovitostí?
+            </h2>
+            <p class="mb-8 text-neutral-400 contact-cta-main-subheading main-section-heading">
+                Začni zdarma a zjisti, jak ti náš nástroj ušetří hodiny práce měsíčně.
+            </p>
+            <a href="#contact-form" class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl contact-cta-link main-section-link">
+                Vyzkoušej zdarma
+            </a>
         </div>
     </section>
 
