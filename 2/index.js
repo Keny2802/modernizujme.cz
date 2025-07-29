@@ -4,7 +4,7 @@ let isDeleting = false;
 
 const header = document.getElementById("header");
 const headerLogo = header.querySelector(".logo-content");
-const headerLinks = header.querySelectorAll(".navigation-link");;
+const headerLinks = document.querySelectorAll(".navigation-link");;
 const hamburger = document.getElementById("hamburger");
 const menu = document.getElementById("mobile-menu-header");
 const menuLinks = menu.querySelectorAll(".mobile-menu-link");
