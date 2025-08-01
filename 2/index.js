@@ -3,6 +3,7 @@ let charIndex = 0;
 let isDeleting = false;
 let carouselIndex = 0;
 
+const body = document.body;
 const header = document.getElementById("header");
 const headerLogo = header.querySelector(".logo-content");
 const headerLinks = document.querySelectorAll(".navigation-link");;
@@ -41,9 +42,11 @@ headerLinks.forEach((headerLink) => {
 });
 
 hamburger.addEventListener("click", function(evt) {
-    hamburger.classList.toggle("open");
+    const isHamburgerOpen = hamburger.classList.toggle("open");
     menu.classList.toggle("hidden");
     menu.classList.toggle("flex");
+
+    body.classList.toggle("overflow-hidden", isHamburgerOpen);
 });
 
 menuLinks.forEach((menuLink) => {
@@ -51,6 +54,7 @@ menuLinks.forEach((menuLink) => {
         hamburger.classList.remove("open");
         menu.classList.add("hidden");
         menu.classList.remove("flex");
+        body.classList.remove("overflow-hidden");
 
         evt.preventDefault();
 
