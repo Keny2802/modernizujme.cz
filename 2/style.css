@@ -1,3 +1,21 @@
+.navigation-link {
+    --_gap: 2rem;
+    position: relative;
+    padding-inline: calc(var(--_gap) / 2);
+}
+
+.navigation-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    height: 1.5px;
+    width: 100%;
+    background: #2563eb;
+    scale: 0 1;
+    transition: scale 0.25s;
+}
+
 .hamburger {
     display: none;
 }
@@ -22,5 +40,79 @@
 
     .mobile-header .logo {
         font-size: 24px;
+    }
+}
+
+@media (hover: hover) {
+    .navigation-link:hover {
+        color: #2563eb;
+    }
+
+    .navigation-link:hover::after {
+        scale: 1 1;
+    }
+
+    .mobile-menu-link:hover {
+        color: #2563eb;
+    }
+
+    .mobile-menu-cta-link:hover {
+        background-color: #1d4ed8;
+        color: #ffffff;
+    }
+
+    .hero-main-link:hover {
+        background-color: #1d4ed8;
+    }
+
+    .hero-second-main-link:hover {
+        background-color: #f3f4f6;
+        color: #1d4ed8;
+    }
+
+    .feature-box:hover {
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+            0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    .use-case-content-wrapper:hover {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+
+    .how-it-works-box:hover {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+    
+    .tab-btn:hover {
+        background-color: #2563eb;
+        color: #ffffff;
+    }
+
+    .monthly-plan:hover {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+
+    .annually-plan:hover {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+
+    .monthly-plan-cta:hover {
+        background-color: #1d4ed8;
+    }
+
+    .annually-plan-cta:hover {
+        background-color: #1d4ed8;
+    }
+
+    .kulhanek-club-main-cta-link:hover {
+        background-color: #1e40af;
+    }
+
+    .footer-content-list-link:hover {
+        text-decoration: underline;
     }
 }

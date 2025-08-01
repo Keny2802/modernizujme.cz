@@ -25,19 +25,19 @@
             <nav class="flex gap-4 navigation-container">
                 <a
                     href="#features"
-                    class="text-sm text-black no-underline transition-colors duration-300 hover:text-blue-600 navigation-link"
+                    class="text-sm text-black no-underline transition-colors duration-300 navigation-link"
                 >
                     Funkce
                 </a>
                 <a
                     href="#pricing"
-                    class="text-sm text-black no-underline transition-colors duration-300 hover:text-blue-600 navigation-link"
+                    class="text-sm text-black no-underline transition-colors duration-300 navigation-link"
                 >
                     Ceník
                 </a>
                 <a
                     href="#contact"
-                    class="text-sm text-black no-underline transition-colors duration-300 hover:text-blue-600 navigation-link"
+                    class="text-sm text-black no-underline transition-colors duration-300 navigation-link"
                 >
                     Kontakt
                 </a>
@@ -50,8 +50,9 @@
         </div>
     </header>
 
-    <div class="hidden flex-col items-center fixed inset-0 h-full w-full px-6 py-4 bg-white border-b border-gray-200 bg-white md:hidden transition-all duration-500 ease-in-out mobile-header" id="mobile-menu-header">
-        <div class="mt-10 text-4xl font-black tracking-tight logo">
+    <!-- flex-col items-center -->
+    <div class="hidden fixed inset-0 h-full w-full px-6 py-4 bg-white border-b border-gray-200 bg-white md:hidden transition-all duration-500 ease-in-out mobile-header" id="mobile-menu-header">
+        <div class="text-4xl font-black tracking-tight logo">
             <p class="logo-content">
                 Kulhánek SOFT
                 <span class="relative text-[#0070f3] right-[5px] logo-content-special-word">
@@ -59,17 +60,17 @@
                 </span>
             </p>
         </div>
-        <nav class="mt-20 flex flex-col justify-center items-center gap-4 mobile-header-wrapper">
-            <a href="#features" class="text-xl text-black hover:text-blue-600 transition mobile-menu-link">
+        <nav class="flex flex-col justify-center items-center gap-4 mobile-header-wrapper">
+            <a href="#features" class="text-xl text-black transition mobile-menu-link">
                 Funkce
             </a>
-            <a href="#pricing" class="text-xl text-black hover:text-blue-600 transition mobile-menu-link">
+            <a href="#pricing" class="text-xl text-black transition mobile-menu-link">
                 Ceník
             </a>
-            <a href="#contact" class="text-xl text-black hover:text-blue-600 transition mobile-menu-link">
+            <a href="#contact" class="text-xl text-black transition mobile-menu-link">
                 Kontakt
             </a>
-            <a href="#demo" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition mobile-menu-cta-link mobile-menu-link">
+            <a href="#demo" class="mt-2 bg-blue-600 text-white px-4 py-2 rounded transition mobile-menu-cta-link mobile-menu-link">
                 Vyzkoušet zdarma
             </a>
         </nav>
@@ -88,10 +89,10 @@
                 Vše, co potřebujete pro správu nemovitostí na jednom místě.
             </p>
             <div class="flex justify-start gap-4 mt-3 hero-actions">
-                <a href="#features" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded text-xl tracking-wide transition-colors duration-300 navigation-link section-main-cta-link main-cta-link hero-main-link">
+                <a href="#features" class="inline-block bg-blue-600 text-white px-8 py-3 rounded text-xl tracking-wide transition-colors duration-300 section-main-cta-link main-cta-link hero-main-link section-cta-btn">
                     Zjistit více
                 </a>
-                <a href="#contact" class="inline-block bg-white text-blue-600 border-2 border-blue-600 hover:bg-gray-100 hover:text-blue-700 px-8 py-3 rounded text-xl tracking-wide transition-colors duration-200 navigation-link section-second-main-cta-link main-cta-link hero-second-main-link">
+                <a href="#contact" class="inline-block bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded text-xl tracking-wide transition-colors duration-200 section-second-main-cta-link main-cta-link hero-second-main-link section-cta-btn">
                     Kontaktovat nás
                 </a>
             </div>
@@ -124,118 +125,6 @@
         </div>
     </section>
 
-    <section class="bg-white px-6 py-24 border-t border-gray-200 features" id="features">
-        <div class="max-w-6xl mx-auto features-wrapper">
-            <h2 class="text-4xl font-bold tracking-tight text-black mb-4 sm:text-3xl features-main-heading section-main-heading">
-                Co všechno umí?
-            </h2>
-            <p class="text-lg text-gray-600 mb-10 max-w-2xl features-main-subheading section-main-subheading">
-                Vše na jednom místě. Tento nástroj je postavený pro jednoduchost, výkon a efektivitu.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 features-text-content features-boxes">
-
-                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-all cursor-pointer feature-box">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-black">
-                            Rychlý export
-                        </h3>
-                    </div>
-                    <p class="text-gray-600">
-                        Stáhni si výstup ve formátu, který potřebuješ. PDF, JSON, CSV a další? Není Problém
-                    </p>
-                </div>
-
-                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-all cursor-pointer feature-box">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path d="M12 8v4l3 3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-black">
-                            Žádné čekání
-                        </h3>
-                    </div>
-                    <p class="text-gray-600">
-                        Bleskové načítání. Bez zbytečného zdžování a spinnerů.
-                    </p>
-                </div>
-
-                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-all cursor-pointer feature-box">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-black">
-                            Bez registrace
-                        </h3>
-                    </div>
-                    <p class="text-gray-600">
-                        Začni okamžitě. Bez vytváření účtu a bez sběru dat.
-                    </p>
-                </div>
-
-                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-all cursor-pointer feature-box">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-black">
-                            Jednoduché použití
-                        </h3>
-                    </div>
-                    <p class="text-gray-600">
-                        Maximálně přehledné rozhraní. Vše na dosah jednoho kliknutí.
-                    </p>
-                </div>
-
-                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-all cursor-pointer feature-box">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path d="M20 12H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-black">
-                            Temný režim
-                        </h3>
-                    </div>
-                    <p class="text-gray-600">
-                        Šetrný k očím - tmavé téma pro noční práci nebo vývoj.
-                    </p>
-                </div>
-
-                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 hover:shadow-lg transition-all cursor-pointer feature-box">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path d="M8 17l4 4 4-4m0-10l-4-4-4 4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-black">
-                            Open source
-                        </h3>
-                    </div>
-                    <p class="text-gray-600">
-                        Zdarma. Otevřený kód. Možnost přispívat a upravovat podle potřeby.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
     <section class="bg-white px-6 py-24 border-t border-gray-200 stats" id="stats">
         <div class="max-w-6xl mb-8 mx-auto grid grid-cols-1 sm:grid-cols-3 gap-3 text-center text-gray-700 stats-boxes stats-wrapper">
             <div class="stats-box">
@@ -265,7 +154,119 @@
         </div>
     </section>
 
-    <section class="bg-white px-6 py-24 border-t border-gray-200 use-case">
+    <section class="bg-white px-6 py-24 border-t border-gray-200 features" id="features">
+        <div class="max-w-6xl mx-auto features-wrapper">
+            <h2 class="text-4xl font-bold tracking-tight text-black mb-4 sm:text-3xl features-main-heading section-main-heading">
+                Co všechno umí?
+            </h2>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl features-main-subheading section-main-subheading">
+                Vše na jednom místě. Tento nástroj je postavený pro jednoduchost, výkon a efektivitu.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 features-text-content features-boxes">
+
+                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 transition-all cursor-pointer feature-box">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-black">
+                            Rychlý export
+                        </h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Stáhni si výstup ve formátu, který potřebuješ. PDF, JSON, CSV a další? Není Problém
+                    </p>
+                </div>
+
+                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 transition-all cursor-pointer feature-box">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M12 8v4l3 3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-black">
+                            Žádné čekání
+                        </h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Bleskové načítání. Bez zbytečného zdžování a spinnerů.
+                    </p>
+                </div>
+
+                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 transition-all cursor-pointer feature-box">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-black">
+                            Bez registrace
+                        </h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Začni okamžitě. Bez vytváření účtu a bez sběru dat.
+                    </p>
+                </div>
+
+                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 transition-all cursor-pointer feature-box">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-black">
+                            Jednoduché použití
+                        </h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Maximálně přehledné rozhraní. Vše na dosah jednoho kliknutí.
+                    </p>
+                </div>
+
+                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 transition-all cursor-pointer feature-box">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M20 12H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-black">
+                            Temný režim
+                        </h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Šetrný k očím - tmavé téma pro noční práci nebo vývoj.
+                    </p>
+                </div>
+
+                <div class="bg-neutral-50 rounded-2xl p-6 shadow-md border border-gray-200 transition-all cursor-pointer feature-box">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-[#0070f3]/10 p-3 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#0070f3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M8 17l4 4 4-4m0-10l-4-4-4 4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-black">
+                            Open source
+                        </h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Zdarma. Otevřený kód. Možnost přispívat a upravovat podle potřeby.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-white px-6 py-24 border-t border-gray-200 use-case" id="use-case">
         <div class="max-w-6xl mx-auto text-center use-case-wrapper">
             <h2 class="text-4xl font-extrabold mb-8 sm:text-3xl use-case-main-heading section-main-heading">
                 Pro koho je tento nástroj?
@@ -273,7 +274,7 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 text-left">
 
-                <div class="p-6 border rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer lg:col-span-2">
+                <div class="p-6 border rounded-2xl shadow-sm transition cursor-pointer lg:col-span-2 use-case-content-wrapper">
                     <div class="flex items-center gap-3 mb-3">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
                             viewBox="0 0 24 24">
@@ -288,7 +289,7 @@
                     </p>
                 </div>
 
-                <div class="p-6 border rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer lg:col-span-2">
+                <div class="p-6 border rounded-2xl shadow-sm transition cursor-pointer lg:col-span-2 use-case-content-wrapper">
                     <div class="flex items-center gap-3 mb-3">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
                             viewBox="0 0 24 24">
@@ -304,7 +305,7 @@
                     </p>
                 </div>
 
-                <div class="p-6 border rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer lg:col-span-2">
+                <div class="p-6 border rounded-2xl shadow-sm transition cursor-pointer lg:col-span-2 use-case-content-wrapper">
                     <div class="flex items-center gap-3 mb-3">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
                             viewBox="0 0 24 24">
@@ -320,7 +321,7 @@
                     </p>
                 </div>
 
-                <div class="p-6 border rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer lg:col-span-3">
+                <div class="p-6 border rounded-2xl shadow-sm transition cursor-pointer lg:col-span-3 use-case-content-wrapper">
                     <div class="flex items-center gap-3 mb-3">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
                             viewBox="0 0 24 24">
@@ -336,7 +337,7 @@
                     </p>
                 </div>
 
-                <div class="p-6 border rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer lg:col-span-3">
+                <div class="p-6 border rounded-2xl shadow-sm transition cursor-pointer lg:col-span-3 use-case-content-wrapper">
                     <div class="flex items-center gap-3 mb-3">
                         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
                             viewBox="0 0 24 24">
@@ -356,6 +357,59 @@
         </div>
     </section>
 
+    <section class="bg-white px-6 py-24 border-t border-gray-200 how-it-works" id="how-it-works">
+        <div class="max-w-6xl mx-auto text-center how-it-works-wrapper">
+            <h2 class="text-4xl font-extrabold mb-8 sm:text-3xl how-it-works-main-heading section-main-heading">
+                Jak software funguje?
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6 text-left how-it-works-boxes">
+                <div class="p-6 border rounded-2xl shadow-sm transition cursor-pointer how-it-works-box">
+                    <div class="flex items-center gap-3 mb-3">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M3 10h18M9 16h6M6 20h12M4 4h16" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h3 class="text-xl font-bold">
+                            1. Přidáš nemovitosti
+                        </h3>
+                    </div>
+                    <p class="text-neutral-700">
+                        Nahraješ své reality, nastavíš údaje a přidáš vlástníky či nájemce.
+                    </p>
+                </div>
+                <div class="p-6 border rounded-2xl shadow-sm transition cursor-pointer how-it-works-box">
+                    <div class="flex items-center gap-3 mb-3">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5v14" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h3 class="text-xl font-bold">
+                            2. Sleduješ vše na jednom místě
+                        </h3>
+                    </div>
+                    <p class="text-neutral-700">
+                        Nájemné, údaje, smlouvy, i poznámky - přehledně v jednom softwaru.
+                    </p>
+                </div>
+                <div class="p-6 border rounded-2xl shadow-sm transition cursor-pointer how-it-works-box">
+                    <div class="flex items-center gap-3 mb-3">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M12 8v4l3 3M12 2a10 10 0 100 20 10 10 0 000-20z" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                        <h3 class="text-xl font-bold">
+                            3. Automatizuješ rutinu
+                        </h3>
+                    </div>
+                    <p class="text-neutral-700">
+                        Upomínky, nájmy, reporty nebo připomenutí- všechno jede automaticky.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="bg-white px-6 py-24 border-t border-gray-200 pricing" id="pricing">
         <div class="max-w-6xl mx-auto text-center pricing-wrapper">
             <h2 class="text-4xl font-extrabold mb-6 sm:text-3xl pricing-main-heading main-section-heading">
@@ -366,17 +420,17 @@
             </p>
 
             <div class="flex justify-center mb-10 spaxe-x-4 gap-4 pricing-plan-tabs">
-                <button class="px-4 py-2 border rounded-full font-medium text-sm hover:bg-blue-600 hover:text-white transition duration-300 tab-btn active-tab" id="monthly-tab">
+                <button class="px-4 py-2 border rounded-full font-medium text-sm transition duration-300 tab-btn active-tab" id="monthly-tab">
                     Měsíčně
                 </button>
-                <button class="px-4 py-2 border rounded-full font-medium text-sm hover:bg-blue-600 hover:text-white transition duration-300 tab-btn" id="annually-tab">
+                <button class="px-4 py-2 border rounded-full font-medium text-sm transition duration-300 tab-btn" id="annually-tab">
                     Ročně (Výhodněji)
                 </button>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 monthly-plans" id="monthly-plans">
 
-                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition monthly-plan">
+                <div class="border rounded-2xl p-6 shadow-sm transition monthly-plan">
                     <h3 class="text-xl font-bold mb-2">
                         Základní
                     </h3>
@@ -397,12 +451,12 @@
                             ✅ Upozornění na platby
                         </li>
                     </ul>
-                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded monthly-plan-cta">
+                    <a href="#contact" class="block text-center bg-blue-600 text-white px-4 py-2 rounded monthly-plan-cta section-cta-btn">
                         Začít
                     </a>
                 </div>
 
-                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition monthly-plan">
+                <div class="border rounded-2xl p-6 shadow-sm transition monthly-plan">
                     <h3 class="text-xl font-bold mb-2">
                         Pro
                     </h3>
@@ -423,12 +477,12 @@
                             ✅ Exporty do PDF
                         </li>
                     </ul>
-                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded monthly-plan-cta">
+                    <a href="#contact" class="block text-center bg-blue-600 text-white px-4 py-2 rounded monthly-plan-cta section-cta-btn">
                         Vyzkoušet
                     </a>
                 </div>
 
-                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition monthly-plan">
+                <div class="border rounded-2xl p-6 shadow-sm transition monthly-plan">
                     <h3 class="text-xl font-bold mb-2">
                         Týmový
                     </h3>
@@ -449,7 +503,7 @@
                             ✅ Prioritní podpora
                         </li>
                     </ul>
-                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded monthly-plan-cta">
+                    <a href="#contact" class="block text-center bg-blue-600 text-white px-4 py-2 rounded monthly-plan-cta section-cta-btn">
                         Kontaktovat
                     </a>
                 </div>
@@ -457,7 +511,7 @@
             </div>
 
             <div class="hidden grid grid-cols-1 md:grid-cols-3 gap-8 annually-plans" id="annually-plans">
-                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition annually-plan">
+                <div class="border rounded-2xl p-6 shadow-sm transition annually-plan">
                     <h3 class="text-xl font-bold mb-2">
                         Základní
                     </h3>
@@ -478,11 +532,11 @@
                             ✅ Upozornění na platby
                         </li>
                     </ul>
-                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded annually-plan-cta">
+                    <a href="#contact" class="block text-center bg-blue-600 text-white px-4 py-2 rounded annually-plan-cta section-cta-btn">
                         Začít
                     </a>
                 </div>
-                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition annually-plan">
+                <div class="border rounded-2xl p-6 shadow-sm transition annually-plan">
                     <h3 class="text-xl font-bold mb-2">
                         Pro
                     </h3>
@@ -503,11 +557,11 @@
                             ✅ Exporty do PDF
                         </li>
                     </ul>
-                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded annually-plan-cta">
+                    <a href="#contact" class="block text-center bg-blue-600 text-white px-4 py-2 rounded annually-plan-cta section-cta-btn">
                         Vyzkoušet
                     </a>
                 </div>
-                <div class="border rounded-2xl p-6 shadow-sm hover:shadow-md transition annually-plan">
+                <div class="border rounded-2xl p-6 shadow-sm transition annually-plan">
                     <h3 class="text-xl font-bold mb-2">
                         Týmový
                     </h3>
@@ -528,7 +582,7 @@
                             ✅ Prioritní podpora
                         </li>
                     </ul>
-                    <a href="#contact" class="block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded annually-plan-cta">
+                    <a href="#contact" class="block text-center bg-blue-600 text-white px-4 py-2 rounded annually-plan-cta section-cta-btn">
                         Kontaktovat
                     </a>
                 </div>
@@ -559,66 +613,312 @@
                     ✅ Možnost ovlivnit další vývoj softwaru
                 </li>
             </ul>
-            <a href="#contact" class="inline-block bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold tracking-wide hover:bg-blue-800 transition kulhanek-club-main-cta-link">
+            <a href="#contact" class="inline-block bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold tracking-wide transition kulhanek-club-main-cta-link">
                 Chci se přidat
             </a>
         </div>
     </section>
 
-    <section class="bg-white px-6 py-24 border-t border-gray-200 how-it-works">
-        <div class="max-w-6xl mx-auto text-center how-it-works-wrapper">
-            <h2 class="text-4xl font-extrabold mb-8 sm:text-3xl how-it-works-main-heading section-main-heading">
-                Jak software funguje?
+    <section class="bg-white px-6 py-24 border-t border-gray-200 faq">
+        <div class="max-w-4xl mx-auto text-center faq-wrapper">
+            <h2 class="text-4xl font-extrabold mb-8 sm:text-3xl faq-main-heading main-section-heading">
+                Často kladené otázky
             </h2>
-            <div class="grid md:grid-cols-3 gap-6 text-left how-it-works-boxes">
-                <div class="p-6 border rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer how-it-works-box">
-                    <div class="flex items-center gap-3 mb-3">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M3 10h18M9 16h6M6 20h12M4 4h16" stroke-linecap="round" stroke-linejoin="round" />
+            <div class="space-y-4 text-left faq-container" id="faq-container">
+
+                <div class="border rounded-2xl overflow-hidden shadow-sm faq-item">
+                    <button class="w-full flex justify-between items-center p-5 text-left focus:outline-none transition faq-toggle">
+                        <span class="font-semibold text-lg faq-item-title">
+                            Je software vhodný i pro malé pronajímatele?
+                        </span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300 faq-svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
-                        <h3 class="text-xl font-bold">
-                            1. Přidáš nemovitosti
-                        </h3>
+                    </button>
+                    <div class="px-5 pb-5 hidden text-gray-600 faq-content-wrapper">
+                        <p class="faq-content">
+                            Ano, máme plán přímo pro jednotlivce, kteří spravují pár nemovitostí.
+                            Je jednoduchý, ale velmi výkonný.
+                        </p>
                     </div>
-                    <p class="text-neutral-700">
-                        Nahraješ své reality, nastavíš údaje a přidáš vlástníky či nájemce.
-                    </p>
                 </div>
-                <div class="p-6 border rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer how-it-works-box">
-                    <div class="flex items-center gap-3 mb-3">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5v14" stroke-linecap="round" stroke-linejoin="round" />
+
+                <div class="border rounded-2xl overflow-hidden shadow-sm faq-item">
+                    <button class="w-full flex justify-between items-center p-5 text-left focus:outline-none transition faq-toggle">
+                        <span class="font-semibold text-lg faq-item-title">
+                            Lze přidat další kolegy do týmu?
+                        </span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300 faq-svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
-                        <h3 class="text-xl font-bold">
-                            2. Sleduješ vše na jednom místě
-                        </h3>
+                    </button>
+                    <div class="px-5 pb-5 hidden text-gray-600 faq-content-wrapper">
+                        <p class="faq-content">
+                            Ano, v týmovém plánu můžete spolupracovat s dalšími správci, realitními makléři nebo účetními.
+                        </p>
                     </div>
-                    <p class="text-neutral-700">
-                        Nájemné, údaje, smlouvy, i poznámky - přehledně v jednom softwaru.
-                    </p>
                 </div>
-                <div class="p-6 border rounded-2xl shadow-sm hover:shadow-md transition cursor-pointer how-it-works-box">
-                    <div class="flex items-center gap-3 mb-3">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M12 8v4l3 3M12 2a10 10 0 100 20 10 10 0 000-20z" stroke-linecap="round"
-                            stroke-linejoin="round" />
+
+                <div class="border rounded-2xl overflow-hidden shadow-sm faq-item">
+                    <button class="w-full flex justify-between items-center p-5 text-left focus:outline-none transition faq-toggle">
+                        <span class="font-semibold text-lg faq-item-title">
+                            Jak probíhá vyúčtování služeb?
+                        </span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300 faq-svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
-                        <h3 class="text-xl font-bold">
-                            3. Automatizuješ rutinu
-                        </h3>
+                    </button>
+                    <div class="px-5 pb-5 hidden text-gray-600 faq-content-wrapper">
+                        <p class="faq-content">
+                            Vše zvládnete online na pár kliknutí - můžete odesílat výpočty i podklady nájemníkům a vlastníkům.
+                        </p>
                     </div>
-                    <p class="text-neutral-700">
-                        Upomínky, nájmy, reporty nebo připomenutí- všechno jede automaticky.
-                    </p>
                 </div>
+
+                <div class="border rounded-2xl overflow-hidden shadow-sm faq-item">
+                    <button class="w-full text-left flex justify-between items-center p-5 focus:outline-none transition faq-toggle">
+                        <span class="font-semibold text-lg faq-item-title">
+                            Je možné přidat další členy týmu?
+                        </span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300 faq-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="px-5 pb-5 hidden text-gray-600 faq-content-wrapper">
+                        <p class="faq-content">
+                            Ano, v pokročilých plánech můžeš přidávat další uživatele a přiřazovat jim různé role.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border rounded-2xl overflow-hidden shadow-sm faq-item">
+                    <button class="w-full text-left flex justify-between items-center p-5 focus:outline-none transition faq-toggle">
+                        <span class="font-semibold text-lg faq-item-title">
+                            Jak probíhá technická podpora?
+                        </span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300 faq-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="px-5 pb-5 hidden text-gray-600 faq-content-wrapper">
+                        <p class="faq-content">
+                            Naše technická podpora je dostupná přes e-mail nebo chat. U vyšších tarifů nabízíme i telefonickou podporu.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border rounded-2xl overflow-hidden shadow-sm faq-item">
+                    <button class="w-full text-left flex justify-between items-center p-5 focus:outline-none transition faq-toggle">
+                        <span class="font-semibold text-lg faq-item-title">
+                            Jak dlouho trvá nasazení?
+                        </span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300 faq-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="px-5 pb-5 hidden text-gray-600 faq-content-wrapper">
+                        <p class="faq-content">
+                            Většinu projektů spustíš do 5 minut. Stačí přidat své nemovitosti a začít.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border rounded-2xl overflow-hidden shadow-sm faq-item">
+                    <button class="w-full text-left flex justify-between items-center p-5 focus:outline-none transition faq-toggle">
+                        <span class="font-semibold text-lg faq-item-title">
+                            Je možné importovat existující data?
+                        </span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300 faq-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="px-5 pb-5 hidden text-gray-600 faq-content-wrapper">
+                        <p class="faq-content">
+                            Ano, umíme import z Excelu nebo Google Sheets - stačí nám strukturovaný soubor.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border rounded-2xl overflow-hidden shadow-sm faq-item">
+                    <button class="w-full text-left flex justify-between items-center p-5 focus:outline-none transition faq-toggle">
+                        <span class="font-semibold text-lg faq-item-title">
+                            Co když spravuji více typů nemovitostí?
+                        </span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300 faq-svg"fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="px-5 pb-5 hidden text-gray-600 faq-content-wrapper">
+                        <p class="faq-content">
+                            Náš systém zvládá byty, domy, komerční objekty i pozemky - vše přehledně oddělené.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border rounded-2xl overflow-hidden shadow-sm faq-item">
+                    <button class="w-full text-left flex justify-between items-center p-5 focus:outline-none transition faq-toggle">
+                        <span class="font-semibold text-lg faq-item-title">
+                            Je možné přidat více uživatelů do týmu? 
+                        </span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300 faq-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="px-5 pb-5 hidden text-gray-600 faq-content-wrapper">
+                        <p class="faq-content">
+                            Samozřejmě. U týmového plánu můžete přidat správce, účetní i asistenty s různými právy.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="border rounded-2xl overflow-hidden shadow-sm faq-item">
+                    <button class="w-full text-left flex justify-between items-center p-5 focus:outline-none transition faq-toggle">
+                        <span class="font-semibold text-lg faq-item-title">
+                            Mohu používat software i na mobilu?
+                        </span>
+                        <svg class="w-5 h-5 transform transition-transform duration-300 faq-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="px-5 pb-5 hidden text-gray-600 faq-content-wrapper">
+                        <p class="faq-content">
+                            Ano, aplikace je plně responzivní a funguje skvěle i na mobilních zařízeních a tabletech.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="bg-white px-6 py-24 border-t border-gray-200 contact-cta">
+    <section class="bg-white px-6 py-24 border-t border-gray-200 reviews">
+        <div class="max-w-4xl mx-auto text-center reviews-wrapper">
+            <h2 class="text-4xl font-extrabold mb-8 sm:text-3xl reviews-main-heading main-section-heading">
+                Co říkají naši uživatelé
+            </h2>
+
+            <div class="relative overflow-hidden review-carousel-wrapper">
+                <div class="flex transition-transform duration-500 ease-in-out review-carousel" id="review-carousel">
+                    
+                    <div class="min-w-full px-4 review">
+                        <div class="p-6 bg-gray-100 rounded-2xl review-wrapper">
+                            <p class="text-gray-700 italic mb-4 review-title">
+                                „Konečně mám přehled o všech nájmech. Kulhánek software mi šetří hodiny týdně.“
+                            </p>
+                            <p class="font-bold review-subtitle">
+                                Jan Novák, pronajímatel
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="min-w-full px-4 review">
+                        <div class="p-6 bg-gray-100 rounded-2xl review-wrapper">
+                            <p class="text-gray-700 italic mb-4 review-title">„Přehledný a jednoduchý nástroj. Doporučuji každému správci nemovitostí.“</p>
+                            <p class="font-bold review-subtitle">
+                                Petra Dvořáková, správa budov
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="min-w-full px-4 review">
+                        <div class="p-6 bg-gray-100 rounded-2xl review-wrapper">
+                            <p class="text-gray-700 italic mb-4 review-title">
+                                „Za ty peníze je to super investice. Mám i exporty pro účetní.“
+                            </p>
+                            <p class="font-bold review-subtitle">
+                                Marek Černý, investor
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="min-w-full px-4 review">
+                        <div class="p-6 bg-gray-100 rounded-2xl review-wrapper">
+                            <p class="text-gray-700 italic mb-4 review-title">
+                                „Skvělá zákaznická podpora a rychlé odpovědi. Přechod na tento systém byl snadný.“
+                            </p>
+                            <p class="font-bold review-subtitle">
+                                Lucie Králová, realitní kancelář
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="min-w-full px-4 review">
+                        <div class="p-6 bg-gray-100 rounded-2xl review-wrapper">
+                            <p class="text-gray-700 italic mb-4 review-title">
+                                „Používám denně. Už žádné Excel tabulky - vše mám přehledně v jedné appce.“
+                            </p>
+                            <p class="font-bold review-subtitle">
+                                Tomáš Malý, developer
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="min-w-full px-4 review">
+                        <div class="p-6 bg-gray-100 rounded-2xl review-wrapper">
+                            <p class="text-gray-700 italic mb-4 review-title">
+                                „Kulhánek software mi pomohl automatizovat upomínky a šetří mi čas i energii.“
+                            </p>
+                            <p class="font-bold review-subtitle">
+                                Alena Tichá, správa bytových jednotek
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="absolute top-1/2 left-0 transform -translate-y-1/2 controls">
+                    <button class="bg-blue-600 border shadow-sm p-2 rounded-full hover:bg-gray-100 transition controls-prev-btn" id="controls-prev-btn">
+                        ◀
+                    </button>
+                </div>
+                <div class="absolute top-1/2 right-0 transform -translate-y-1/2 controls">
+                    <button class="bg-blue-600 border shadow-sm p-2 rounded-full hover:bg-gray-100 transition controls-next-btn" id="controls-next-btn">
+                        ▶
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-white px-6 py-24 border-t border-gray-200 contact" id="contact">
+        <div class="max-w-4xl mx-auto text-center contact-wrapper">
+            <h2 class="text-4xl font-extrabold mb-6 main-section-heading contact-main-heading">
+                Spojme se
+            </h2>
+            <p class="text-gray-600 mb-12 main-section-subheading contact-main-subheading">
+                Máš dotaz nebo potřebuješ poradit? Neváhej nám napsat. Odpovíme co nejdříve.
+            </p>
+
+            <form class="text-left space-y-6 max-w-xl mx-auto form">
+                <div class="form-item">
+                    <label for="name" class="block text-sm font-medium text-gray-700">
+                        Jméno
+                    </label>
+                    <input type="text" name="name" id="name" class="mt-4 block w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Jan Novák">
+                </div>
+                <div class="form-item">
+                    <label for="email" class="block text-sm font-medium text-gray-700">
+                        Email
+                    </label>
+                    <input type="email" name="email" id="email" class="mt-4 block w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="jan.novak@seznam.cz">
+                </div>
+                <div class="form-item">
+                    <label for="message" class="block text-sm font-medium text-gray-700">
+                        Zpráva
+                    </label>
+                    <textarea name="message" id="message" class="mt-4 block h-[200px] w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600 resize-none" placeholder="Zajímá mě, jak funguje automatické vyúčtování nájmu."></textarea>
+                </div>
+                <div class="text-center form-item">
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition duration-300">
+                        Zeptat se
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="bg-white px-6 py-24 border-t border-gray-200 contact-cta" id="contact-cta">
         <div class="max-w-6xl mx-auto text-center contact-cta-wrapper">
             <h2 class="text-4xl font-extrabold mb-4 sm:text-3xl contact-cta-main-heading main-section-heading">
                 Připraven zjednodušit správu nemovitostí?
@@ -632,7 +932,7 @@
         </div>
     </section>
 
-    <footer class="bg-white border-t border-gray-200 px-6 py-24 footer">
+    <footer class="bg-white border-t border-gray-200 px-6 py-24 footer" id="footer">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between gap-6 footer-wrapper">
             <div class="footer-content-wrapper">
                 <div class="text-2xl font-black tracking-tight logo">
@@ -654,17 +954,17 @@
                     </p>
                     <ul class="space-y-1 footer-content-list">
                         <li class="footer-content-list-item">
-                            <a href="#features" class="hover:underline footer-content-list-link">
+                            <a href="#features" class="footer-content-list-link">
                                 Funkce
                             </a>
                         </li>
                         <li class="footer-content-list-item">
-                            <a href="#pricing" class="hover:underline footer-content-list-link">
+                            <a href="#pricing" class="footer-content-list-link">
                                 Ceník
                             </a>
                         </li>
                         <li class="footer-content-list-item">
-                            <a href="#contact" class="hover:underline footer-content-list-link">
+                            <a href="#contact" class="footer-content-list-link">
                                 Kontakt
                             </a>
                         </li>
@@ -677,13 +977,13 @@
                     <ul class="space-y-1 footer-content-list">
                         <li class="footer-content-list-item">
                             Email:
-                            <a href="mailto:info@kulhaneksoftware.cz" class="hover:underline footer-content-list-link" target="_blank">
+                            <a href="mailto:info@kulhaneksoftware.cz" class="footer-content-list-link" target="_blank">
                                 info@kulhaneksoftware.cz
                             </a>
                         </li>
                         <li class="footer-content-list-item">
                             Tel:
-                            <a href="tel:+420737007626" class="hover:underline footer-content-list-link" target="_blank">
+                            <a href="tel:+420737007626" class="footer-content-list-link" target="_blank">
                                 +420 737 007 626
                             </a>
                         </li>
