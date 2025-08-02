@@ -1,0 +1,57 @@
+:root {
+    --blue-400: #60a5fa;
+    --blue-500: #3b82f6;
+    --blue-600: #2563eb;
+    --blue-700: #1d4ed8;
+}
+
+@media screen and (max-width: 768px) {
+    .header-logo {
+        font-size: 25px;
+    }
+
+    .header-link {
+        display: none;
+    }
+
+    .hero-main-heading {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .header-logo {
+        font-size: 24px;
+    }
+}
+
+@media (hover: hover) {
+    .header-link:hover {
+        color: var(--blue-400);
+    }
+
+    .mobile-header-link:hover {
+        color: var(--blue-500);
+    }
+
+    .mobile-header-cta-link:hover {
+        background: var(--blue-700);
+    }
+
+    .hero-cta-link:hover {
+        background: var(--blue-700);
+    }
+
+    .our-car:hover {
+        transform: scale(1.02);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    .filter-tab-btn:hover {
+        background: var(--blue-600);
+    }
+
+    .our-car-cta-link {
+        background: var(--blue-700);
+    }
+}

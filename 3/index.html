@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overscroll-none">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Torque Drive | Auto půjčovna Amerik
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- backdrop-blur-md -->
+    <header class="fixed top-0 left-0 w-full z-50 text-white px-6 py-4 flex justify-between items-center header" id="header">
+        <div class="text-4xl font-black tracking-tight uppercase header-logo" id="header-logo">
+            <span class="text-white">
+                Torque
+            </span>
+            <span class="text-blue-500">
+                Drive
+            </span>
+        </div>
+        <nav class="flex gap-6 text-sm font-medium header-links">
+            <a href="#cars" class="transition header-link">
+                Vozy
+            </a>
+            <a href="#experience" class="transition header-link">
+                Zážitek
+            </a>
+            <a href="#pricing" class="transition header-link">
+                Ceník
+            </a>
+            <a href="#contact" class="transition header-link">
+                Kontakt
+            </a>
+        </nav>
+        <button class="md:hidden z-50 mt-4 ml-auto flex flex-col items-center gap-[5px] h-6 w-6 focus:outline-none group hamburger-btn" id="hamburger-btn">
+            <span class="block h-[2px] w-full bg-white rounded transition-transform duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-[6px]"></span>
+            <span class="block h-[2px] w-full bg-white rounded transition-opacity duration-300 group-[.open]:opacity-0"></span>
+            <span class="block h-[2px] w-full bg-white rounded transition-transform duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-[6px]"></span>
+        </button>
+        <div class="fixed top-0 left-0 h-full w-64 bg-black text-white shadow-lg transform -translate-x-full transition-transform duration-300 z-40 side-panel" id="side-panel">
+            <div class="p-6 flex flex-col gap-4 cursor-pointer side-panel-wrapper">
+                <div class="text-2xl font-black tracking-tight uppercase side-panel-logo">
+                    <span class="text-white">
+                        Torque
+                    </span>
+                    <span class="text-blue-500">
+                        Drive
+                    </span>
+                </div>
+                <a href="#cars" class="text-lg font-semibold transition mobile-header-link">
+                    Vozy
+                </a>
+                <a href="#experience" class="text-lg font-semibold transition mobile-header-link">
+                    Zážitek
+                </a>
+                <a href="#pricing" class="text-lg font-semibold transition mobile-header-link">
+                    Ceník
+                </a>
+                <a href="#contact" class="text-lg font-semibold transition mobile-header-link">
+                    Kontakt
+                </a>
+                <a href="#demo" class="bg-blue-600 text-white px-4 py-2 rounded mt-4 text-center transition mobile-header-link mobile-header-cta-link">
+                    Vyzkoušet
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative flex justify-center items-center text-center h-screen w-full bg-black text-white hero" id="hero">
+        <img src="images/Dodge 1-min.jpg"
+        alt="Hero Image of Dodge"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 h-full w-full object-cover brightness-[.4] bg-fixed bg-center hero-image">
+        
+        <div class="relative p-6 z-10 max-w-3xl mx-auto overlay" id="overlay">
+            <h1 class="text-5xl font-extrabold leading-tight mb-4 drop-shadow-lg hero-main-heading section-main-heading">
+                Muscle cars, které slyšíš dřív, než je uvidíš.
+            </h1>
+            <p class="text-xl text-gray-200 mb-6 hero-main-subheadline section-main-subheadline">
+                Výkon, který ti rozbuší srdce. A fotky, co rozbijí Instagram.
+            </p>
+            <a href="#cars" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition duration-300 hero-cta-link section-cta-link">
+                Vybrat vůz
+            </a>
+        </div>
+
+    </section>
+
+    <section class="bg-[#121212] text-white px-6 py-24 border-t border-[#1f1f1f] cars" id="cars">
+        <div class="max-w-6xl mx-auto text-center cars-wrapper">
+            <h2 class="text-4xl font-extrabold mb-6 uppercase tracking-tight cars-main-heading section-main-heading">
+                Naše Vozy
+            </h2>
+            <p class="text-gray-400 mb-12 text-lg cars-main-subheadline section-main-subheadline">
+                Vyber si z legendárních muscle cars nebo moderních sportovních ikon.
+            </p>
+
+            <div class="flex justify-center flex-wrap gap-4 mb-12 text-sm font-semibold our-car-filter-tabs">
+                <button
+                class="px-4 py-2 bg-blue-600 text-white rounded-full filter-tab-btn active-filter-tab-btn"
+                data-filter-tab="all">
+                    Vše
+                </button>
+                <button class="px-4 py-2 bg-[#1a1a1a] text-white rounded-full transition-all ease-in duration-300 filter-tab-btn" data-filter-tab="muscle">
+                    Muscle
+                </button>
+                <button class="px-4 py-2 bg-[#1a1a1a] text-white rounded-full transition-all ease-in duration-300 filter-tab-btn" data-filter-tab="sport">
+                    Sportovní
+                </button>
+                <button class="px-4 py-2 bg-[#1a1a1a] text-white rounded-full transition-all ease-in duration-300 filter-tab-btn" data-filter-tab="europe">
+                    Evropské
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 our-cars">
+
+                <div class="bg-[#1a1a1a] p-4 cursor-pointer rounded-xl overflow-hidden shadow-lg transition our-car" data-car-type="muscle">
+                    
+                    <img
+                    src="images/Mustang 1-min.jpg"
+                    alt="Mustang"
+                    loading="lazy"
+                    decoding="async"
+                    class="h-56 w-full object-cover rounded-lg our-car-image">
+                    <div class="our-car-text-content">
+                        <h3 class="text-2xl font-bold my-2">
+                            Ford Mustang GT
+                        </h3>
+                        <p class="text-gray-400 italic text-sm mb-2">
+                            Ikona amerických silnic s legendárním zvukem V8.
+                        </p>
+                        <p class="text-gray-400 text-sm mb-4">
+                            5.0 litrů V8, 450 koní (331 kW)
+                        </p>
+                        <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold transition our-car-cta-link section-cta-link">
+                            Rezervovat
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-[#1a1a1a] p-4 cursor-pointer rounded-xl overflow-hidden shadow-lg transition our-car" data-car-type="sport">
+                    <img
+                    src="images/Corvette 1-min.jpg"
+                    alt="Chevrolet Corvette C8"
+                    loading="lazy"
+                    decoding="async"
+                    class="h-56 w-full object-cover rounded-2xl our-car-image">
+                    <div class="our-car-text-content">
+                        <h3 class="text-2xl font-bold my-2">
+                            Chevrolet Corvette C8
+                        </h3>
+                        <p class="text-gray-400 italic text-sm mb-2">
+                            Extrémní akcelerace a futuristický design.
+                        </p>
+                        <p class="text-gray-400 text-sm mb-4">
+                            6.2 litrů V8, 495 koní (368 kW)
+                        </p>
+                        <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold transition our-car-cta-link section-cta-link">
+                            Rezervovat
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-[#1a1a1a] p-4 cursor-pointer rounded-xl overflow-hidden shadow-lg transition our-car" data-car-type="muscle">
+                    <img src="images/Dodge 2-min-2.jpg"
+                    alt="Dodge Challenger"
+                    loading="lazy"
+                    decoding="async"
+                    class="h-56 w-full object-cover rounded-2xl our-car-image">
+                    <div class="our-car-text-content">
+                        <h3 class="text-2xl font-bold my-2">
+                            Dodge Challenger
+                        </h3>
+                        <p class="text-gray-400 italic text-sm mb-2">
+                            Nezkrotná bestie se 717 koňmi pod kapotou.
+                        </p>
+                        <p class="text-gray-400 text-sm mb-4">
+                            5.6 litrů V6, 717 koní (528 kW)
+                        </p>
+                        <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold transition our-car-cta-link section-cta-link">
+                            Rezervovat
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-[#1a1a1a] p-4 cursor-pointer rounded-xl overflow-hidden shadow-lg transition our-car" data-car-type="europe">
+                    <img src="images/Bmw M3 1-min.jpg"
+                    alt="BMW M3 Competition"
+                    loading="lazy"
+                    decoding="async"
+                    class="h-56 w-full object-cover rounded-2xl our-car-image">
+                    <div class="our-car-text-content">
+                        <h3 class="text-2xl font-bold my-2">
+                            BMW M3 Competition
+                        </h3>
+                        <p class="text-gray-400 italic text-sm mb-2">
+                            Německá přesnost, agresivní výkon, maximální kontrola.
+                        </p>
+                        <p class="text-gray-400 text-sm mb-4">
+                            3.0 litrů R6, 510 koní (375 kW)
+                        </p>
+                        <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold transition our-car-cta-link section-cta-link">
+                            Rezervovat
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
