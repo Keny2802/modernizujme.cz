@@ -1,4 +1,5 @@
 :root {
+    --white: #ffffff;
     --blue-400: #60a5fa;
     --blue-500: #3b82f6;
     --blue-600: #2563eb;
@@ -36,6 +37,7 @@
 
     .mobile-header-cta-link:hover {
         background: var(--blue-700);
+        color: var(--white);
     }
 
     .hero-cta-link:hover {
@@ -51,7 +53,11 @@
         background: var(--blue-600);
     }
 
-    .our-car-cta-link {
+    .our-car-cta-link:hover {
         background: var(--blue-700);
+    }
+
+    .experience-main-cta-link:hover {
+        background: var(--blue-600);
     }
 }
