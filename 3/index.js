@@ -8,6 +8,11 @@ const hero = document.getElementById("hero");
 const overlay = document.getElementById("overlay");
 const filterTabBTNS = document.querySelectorAll(".filter-tab-btn");
 const carItems = document.querySelectorAll(".our-car");
+const pricingFaqToggles = document.querySelectorAll(".pricing-faq-toggle");
+const pricingFaqContents = document.querySelectorAll(".pricing-faq-content-wrapper");
+const pricingFaqIcons = document.querySelectorAll(".pricing-faq-toggle-icon");
+const footerYear = document.querySelector(".footer-year");
+const footerLinks = document.querySelectorAll(".footer-link");
 const sectionCTALinks = document.querySelectorAll(".section-cta-link");
 
 window.addEventListener("scroll", function(evt) {
@@ -96,6 +101,38 @@ filterTabBTNS.forEach((filterTabBTN) => {
     });
 });
 
+pricingFaqToggles.forEach((pricingFaqToggle) => {
+    pricingFaqToggle.addEventListener("click", function(evt) {
+        const pricingFaqContent = pricingFaqToggle.nextElementSibling;
+        const pricingFaqIcon = pricingFaqToggle.querySelector(".pricing-faq-svg");
+
+        pricingFaqToggles.forEach((otherPricingFaqToggle) => {
+            if (otherPricingFaqToggle !== pricingFaqToggle) {
+                otherPricingFaqToggle.nextElementSibling.classList.add("hidden");
+                otherPricingFaqToggle.querySelector(".pricing-faq-svg").classList.remove("rotate-180");
+            };
+        });
+
+        pricingFaqContent.classList.toggle("hidden");
+        pricingFaqIcon.classList.toggle("rotate-180");
+    });
+});
+
+footerLinks.forEach((footerLink) => {
+    footerLink.addEventListener("click", function(evt) {
+        evt.preventDefault();
+
+        const targetID = evt.target.getAttribute("href").substring(1);
+        const targetLink = document.getElementById(targetID);
+
+        if (targetLink) {
+            targetLink.scrollIntoView({
+                behavior: "smooth"
+            });
+        };
+    });
+});
+
 sectionCTALinks.forEach((sectionCTALink) => {
     sectionCTALink.addEventListener("click", function(evt) {
         evt.preventDefault();
@@ -116,3 +153,10 @@ sectionCTALinks.forEach((sectionCTALink) => {
 //     mobilePanel.classList.add("-translate-x-full");
 //     overlay.classList.add("hidden");
 // });
+
+function getFooterYear() {
+    const currentYear = new Date().getFullYear();
+    footerYear.textContent = currentYear;
+};
+
+getFooterYear();
