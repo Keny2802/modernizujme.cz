@@ -14,6 +14,7 @@ const pricingFaqIcons = document.querySelectorAll(".pricing-faq-toggle-icon");
 const footerYear = document.querySelector(".footer-year");
 const footerLinks = document.querySelectorAll(".footer-link");
 const sectionCTALinks = document.querySelectorAll(".section-cta-link");
+const sections = document.querySelectorAll("section[id]");
 
 window.addEventListener("scroll", function(evt) {
     if (window.scrollY > 0) {
@@ -154,9 +155,69 @@ sectionCTALinks.forEach((sectionCTALink) => {
 //     overlay.classList.add("hidden");
 // });
 
+document.addEventListener("DOMContentLoaded", function(evt) {
+    const obServer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                const sectionID = entry.target.getAttribute("id");
+                const navLink = document.querySelector(`.header-link[href="#${sectionID}"]`);
+
+                if (entry.isIntersecting) {
+                    headerLinks.forEach((headerLink) => {
+                        headerLink.classList.remove("text-blue-500", "font-semibold");
+
+                        if (navLink) {
+                            navLink.classList.add("text-blue-500", "font-semibold");
+                        };
+                    });
+                }
+            });
+        },
+        {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.5
+        }
+    );
+
+    sections.forEach((section) => {
+        obServer.observe(section);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function(evt) {
+    const nextOBServer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                const sectionID = entry.target.getAttribute("id");
+                const mobileLink = document.querySelector(`.mobile-header-link[href="#${sectionID}"]`);
+
+                if (entry.isIntersecting) {
+                    mobileMenuLinks.forEach((mobileMenuLink) => {
+                        mobileMenuLink.classList.remove("text-blue-500", "font-semibold");
+
+                        if (mobileLink) {
+                            mobileLink.classList.add("text-blue-500", "font-semibold");
+                        };
+                    });
+                };
+            });
+        }
+    );
+
+    sections.forEach((section) => {
+        nextOBServer.observe(section);
+    });
+});
+
 function getFooterYear() {
     const currentYear = new Date().getFullYear();
-    footerYear.textContent = currentYear;
+
+    if (!currentYear) {
+        return;
+    } else {
+        footerYear.textContent = currentYear;
+    };
 };
 
 getFooterYear();
