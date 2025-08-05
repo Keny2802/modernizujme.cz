@@ -26,8 +26,7 @@
     transition: scale 0.5s;
 }
 
-.header-link::after,
-.footer-link::after {
+.header-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -95,19 +94,18 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .footer-links {
         flex-direction: column;
     }
-}
+} */
 
 @media (hover: hover) {
     .header-link:hover {
         color: var(--blue-400);
     }
 
-    .header-link:hover::after,
-    .footer-link:hover::after {
+    .header-link:hover::after {
         scale: 1 1;
     }
 

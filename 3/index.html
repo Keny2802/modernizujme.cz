@@ -132,6 +132,7 @@
                 </button>
             </div>
 
+            <!-- lg:grid-cols-2 -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 our-cars">
 
                 <div class="bg-[#1a1a1a] p-4 cursor-pointer rounded-xl overflow-hidden shadow-lg transition our-car" data-car-type="muscle">
@@ -254,7 +255,8 @@
                 class="h-full w-full object-cover brightness-[.85]">
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8 text-left experience-features">
+            <!-- md:grid-cols-3 -->
+            <div class="grid md:grid-cols-2 gap-8 text-left experience-features">
 
                 <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-md experience-feature">
                     <h3 class="text-xl font-bold mb-2 text-white experience-feature-main-heading section-box-main-heading">
@@ -416,6 +418,84 @@
         </div>
     </section>
 
+    <section class="bg-[#121212] text-white px-6 py-24 border-t border-[#1f1f1f] reservation-flow" id="reservation-flow">
+        <div class="max-w-6xl mx-auto text-center reservation-flow-wrapper">
+            <h2 class="text-4xl font-extrabold mb-6 uppercase tracking-tight reservation-flow-main-heading section-main-heading">
+                Jak rezervace funguje
+            </h2>
+            <p class="text-gray-400 mb-12 text-lg reservation-flow-main-subheadline section-main-subheadline">
+                Jednoduchý a rychlý proces. Od kliknutí po zařazení jedničky.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-4 text-left text-white reservation-flow-steps">
+
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-md reservation-flow-step">
+                    <div class="reservation-flow-step-number-wrapper">
+                        <p class="text-4xl font-black text-blue-600 mb-2 reservation-flow-step-number">
+                            01
+                        </p>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 reservation-flow-step-main-heading section-box-main-heading">
+                        Vyber si vůz
+                    </h3>
+                    <p class="text-gray-400 text-sm reservation-flow-step-main-subheadling section-box-main-subheadline">
+                        Prohlédni si naši nabídku a vyber ten, který ti rozbuší srdce.
+                    </p>
+                </div>
+
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-md reservation-flow-step">
+                    <div class="reservation-flow-step-number-wrapper">
+                        <p class="text-4xl font-black text-blue-600 mb-2 reservation-flow-step-number">
+                            02
+                        </p>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 reservation-flow-step-main-heading section-box-main-heading">
+                        Vyplň formulář
+                    </h3>
+                    <p class="text-gray-400 text-sm reservation-flow-step-main-subheadling section-box-main-subheadline">
+                        Zadej základní údaje a preferovaný termín. Je otázka minuty.
+                    </p>
+                </div>
+
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-md reservation-flow-step">
+                    <div class="reservation-flow-step-number-wrapper">
+                        <p class="text-4xl font-black text-blue-600 mb-2 reservation-flow-step-number">
+                            03
+                        </p>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 reservation-flow-step-main-heading section-box-main-heading">
+                        Potvrzení
+                    </h3>
+                    <p class="text-gray-400 text-sm reservation-flow-step-main-subheadling section-box-main-subheadline">
+                        Ozveme se ti co nejdříve a domluvíme detaily.
+                    </p>
+                </div>
+
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-md reservation-flow-step">
+                    <div class="reservation-flow-step-number-wrapper">
+                        <p class="text-4xl font-black text-blue-600 mb-2 reservation-flow-step-number">
+                            04
+                        </p>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 reservation-flow-step-main-heading section-box-main-heading">
+                        Zažij jízdu
+                    </h3>
+                    <p class="text-gray-400 text-sm reservation-flow-step-main-subheadling section-box-main-subheadline">
+                        Přijď si pro klíčky. Nastartuj. A užívej si každý kilometr.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="mt-12 reservation-flow-contact">
+                <a href="#contact" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full text-base font-semibold transition duration-300 reservation-flow-cta section-cta-link">
+                    Rezervovat zážitek
+                </a>
+            </div>
+
+        </div>
+    </section>
+
     <section class="bg-[#121212] text-white px-6 py-24 border-t border-[#1f1f1f] pricing-faq" id="pricing-faq">
         <div class="max-w-4xl mx-auto space-y-4 pricing-faq-wrapper">
             <h2 class="text-4xl font-extrabold mb-6 uppercase tracking-tight pricing-faq-main-heading section-main-heading">
@@ -574,7 +654,9 @@
                     </span>
                 </p>
             </div>
-            <div class="flex gap-6 footer-links">
+            <!-- flex gap-6 -->
+            <!-- grid grid-cols-2 gap-x-6 gap-y-2 md:flex md:gap-6 footer-links -->
+            <div class="grid grid-cols-2 gap-x-6 gap-y-2 md:flex md:gap-6 footer-links">
 
                 <a href="#hero" class="transition footer-link">
                     Domů
