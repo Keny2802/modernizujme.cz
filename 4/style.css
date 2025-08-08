@@ -49,14 +49,14 @@
     transition: scale 0.5s;
 }
 
-.section-scroll-pinning-effect {
+/* .section-scroll-pinning-effect {
     position: sticky;
     top: 0;
     height: 100vh;
     z-index: 10;
-}
+} */
 
-@media (min-width: 769px) {
+@media (min-width: 48rem) {
     .side-panel {
         transform: none;
         opacity: 1;

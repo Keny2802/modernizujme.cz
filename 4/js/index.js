@@ -50,7 +50,7 @@ window.addEventListener("scroll", function(evt) {
 });
 
 window.addEventListener("resize", function(evt) {
-    if (this.window.innerWidth >= 769) {
+    if (this.window.innerWidth >= 768) {
         headerLogo.classList.remove("hidden");
         mobileMenu.classList.remove("open");
         hamburgerMenuBTN.classList.remove("open");
