@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overscroll-none">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="document-title">
+        Úvod - Nicnedluzim.cz
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden bg-white text-neutral-900 font-sans">
+    
+    <header class="w-full fixed top-0 left-0 z-50 shadow-sm header" id="header">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 header-wrapper">
+            
+            <div class="header-logo-wrapper">
+                <p class="text-3xl text-neutral-200 font-bold tracking-tight header-logo-content">
+                    Nicnedlužím.cz
+                </p>
+            </div>
+
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-neutral-200 header-nav-links-wrapper">
+                <a href="#hero" class="transition header-nav-link">
+                    Domů
+                </a>
+                <a href="#about" class="transition header-nav-link">
+                    O nás
+                </a>
+                <a href="#services" class="transition header-nav-link">
+                    Služby
+                </a>
+                <a href="#contact" class="transition header-nav-link">
+                    Kontakt
+                </a>
+                <a href="#step-by-step" class="transition header-nav-link">
+                    Jak to funguje
+                </a>
+            </nav>
+
+            <button class="md:hidden z-50 mt-4 ml-auto flex flex-col items-center gap-[5px] h-6 w-6 focus:outline-none group hamburger-btn" id="hamburger-btn">
+                <span class="block h-[2px] w-full bg-white rounded transition-transform duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-[6px]"></span>
+                <span class="block h-[2px] w-full bg-white rounded transition-opacity duration-300 group-[.open]:opacity-0"></span>
+                <span class="block h-[2px] w-full bg-white rounded transition-transform duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-[6px]"></span>
+            </button>
+            
+        </div>
+
+        </div>
+    </header>
+
+    <!-- -translate-x-full -->
+     <!-- transform transition-transform duration-300 -->
+    <div class="opacity-0 z-50 fixed top-0 left-0 h-full w-64 backdrop-blur-md text-white shadow-lg side-panel-motion-negative side-panel" id="side-panel">
+        <div class="p-6 flex flex-col gap-4 cursor-pointer side-panel-wrapper">
+            <div class="side-panel-logo-wrapper">
+                <p class="text-white p-2 text-2xl font-bold tracking-tight side-panel-logo-content">
+                    Nicnedlužím.cz
+                </p>
+            </div>
+            <a href="#hero" class="text-lg font-semibold border-b border-gray-800 transition side-panel-nav-link">
+                Domů
+            </a>
+            <a href="#about" class="text-lg font-semibold border-b border-gray-800 transition side-panel-nav-link">
+                O nás
+            </a>
+            <a href="#services" class="text-lg font-semibold border-b border-gray-800 transition side-panel-nav-link">
+                Služby
+            </a>
+            <a href="#contact" class="text-lg font-semibold border-b border-gray-800 transition side-panel-nav-link">
+                Kontakt
+            </a>
+            <a href="#step-by-step" class="text-lg font-semibold transition side-panel-nav-link">
+                Jak to funguje
+            </a>
+            <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full shadow transition side-panel-main-cta-link section-main-cta-link">
+                Chci pomoct
+            </a>
+        </div>
+    </div>
+
+    <section class="relative h-screen w-full flex justify-center items-center px-6 py-24 text-center bg-white section-scroll-pinning-effect section hero" id="hero">
+        
+        <img
+        src="images/Hero 1-min-min.jpg"
+        alt="Hero Obrázek - Šťastná rodina"
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 brightness-[.6] bg-fixed bg-center h-full w-full object-cover hero-image">
+        
+        <div class="relative p-6 z-10 max-w-3xl mx-auto text-white hero-text-overlay">
+            <h1 class="text-5xl font-bold leading-tight mb-4 opacity-0 translate-y-8 section-fade hero-main-heading section-main-heading">
+                Zbavte se dluhů
+                <br class="hidden sm:block">
+                <span class="text-blue-300">
+                    jednou provždy
+                </span>
+            </h1>
+            <p class="text-lg text-neutral-200 mb-8 opacity-0 translate-y-8 section-fade hero-main-subheadline section-main-subheadline">
+                Pomáháme lidem dostat se z dluhové pasti. Odborně, diskrétně a s lidským přístupem.
+            </p>
+            <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full shadow transition hero-main-cta-link section-main-cta-link">
+                Chci pomoct
+            </a>
+        </div>
+        
+    </section>
+
+    <section class="bg-white px-6 py-24 border-t border-[#f1f1f1] section-scroll-pinning-effect section about" id="about">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center about-wrapper">
+            <div class="about-text-content">
+                <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 tracking-tight uppercase opacity-0 translate-y-8 section-fade about-main-heading section-main-heading" id="about-main-heading" data-gsap>
+                    O nás
+                </h2>
+                <p class="text-neutral-700 text-lg mb-6 leading-relaxed opacity-0 translate-y-8 section-fade about-main-subheadline section-main-subheadline" id="about-main-subheadline" data-gsap data-delay="0.2">
+                    Jsme tým odborníků zaměřený na pomoc lidem ve složité finanční situaci.
+                    Naší misí je poskytovat
+                    <span class="text-blue-600 font-medium">
+                        důvěryhodné a diskrétní právní poradenství
+                    </span>
+                    v oblasti oddlužení a insolvence. Věříme, že každý si zaslouží druhou šanci - bez stresu,
+                    bez tlaku a s lidským přístupem.
+                </p>
+                <ul class="space-y-4 text-neutral-700 about-list">
+                    <li class="flex items-start gap-6 opacity-0 translate-y-8 about-list-item">
+                        <svg class="w-6 h-6 text-blue-600 mt-1 about-list-svg" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Individuální přístup ke každému klientovi
+                    </li>
+                    <li class="flex items-start gap-6 opacity-0 translate-y-8 about-list-item">
+                        <svg class="w-6 h-6 text-blue-600 mt-1 about-list-svg" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 10h18M3 6h18M3 14h18M3 18h18"></path>
+                        </svg>
+                        Dlouholeté zkušenosti v oblasti exekucí a insolvencí
+                    </li>
+                    <li class="flex items-start gap-6 opacity-0 translate-y-8 about-list-item">
+                        <svg class="w-6 h-6 text-blue-600 mt-1 about-list-svg" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z"></path>
+                        </svg>
+                        Diskrétnost, empatie a právní jistota
+                    </li>
+                </ul>
+            </div>
+
+            <div class="opacity-0 translate-y-8 section-fade about-image-wrapper" data-gsap data-delay="0.4">
+                <img
+                src="images/Lawyer.jpg"
+                loading="lazy"
+                decoding="async"
+                alt="About Image of Lawyer"
+                class="rounded-2xl shadow-lg w-full object-cover about-image">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-neutral-50 px-6 py-24 border-t border-[#f1f1f1] section-scroll-pinning-effect section services" id="services">
+        <div class="max-w-7xl mx-auto text-center mb-16 services-wrapper">
+            <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 tracking-tight uppercase services-main-heading section-main-heading">
+                Naše služby
+            </h2>
+            <p class="text-neutral-700 text-lg leading-relaxed services-main-subheadline section-main-subheadline">
+                Poskytujeme komplexní právní podporu v oblasti oddlužení, exekucí a osobního bankrotu.
+                Vše diskrétně, rychle a s důrazem na lisdký přístup.
+            </p>
+
+            <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-3 mt-4 service-cards">
+                
+                <div class="bg-white p-6 rounded-2xl shadow transition group opacity-0 translate-y-8 section-fade service-card">
+                    <div class="mb-4 text-blue-600 service-card-wrapper">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-neutral-900 service-card-heading">
+                        Oddlužení a insolvence
+                    </h3>
+                    <p class="text-neutral-600 text-base service-card-subheadline">
+                        Pomůžeme vám projít procesem osobního bankrotu a zajistit nový začátek bez dluhů.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow transition group opacity-0 translate-y-8 section-fade service-card">
+                    <div class="mb-4 text-blue-600 service-card-wrapper">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c1.104 0 2 .896 2 2s-.896 2-2 2s-2-.896-2-2s.896-2 2-2zm0 10c-4.418 0-8-1.79-8-4V7c0-2.21 3.582-4 8-4s8 1.79 8 4v7c0 2.21-3.582 4-8 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-neutral-900 service-card-heading">
+                        Zastavení exekuce
+                    </h3>
+                    <p class="text-neutral-600 text-base service-card-subheadline">
+                        Ochráníme Vás před exekutory a zastavíme neoprávněné nebo neúnosné srážky ze mzdy.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow transition group opacity-0 translate-y-8 section-fade service-card">
+                    <div class="mb-4 text-blue-600 service-card-wrapper">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-3-3v6m9 3V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-neutral-900 service-card-heading">
+                        Konzultace a poradenství
+                    </h3>
+                    <p class="text-neutral-600 text-base service-card-subheadline">
+                        Společně najdeme nejlepší řešení Vaší situace.
+                        První konzultace je zdarma a bez závazků.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-gray-50 px-6 py-24 border-t border-[#f1f1f1] section-scroll-pinning-effect section contact" id="contact">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start contact-wrapper">
+            <div class="contact-text-content">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 tracking-tight uppercase opacity-0 translate-y-8 section-fade contact-main-heading section-main-heading">
+                    Kontaktujte nás
+                </h2>
+                <p class="text-neutral-700 text-lg mb-6 leading-relaxed opacity-0 translate-y-8 section-fade contact-main-subheadline section-main-subheadline">
+                    Máte dotazy nebo potřebujete poradit? Jsme tu pro vás.
+                    Neváhejte nás kontaktovat - diskrétně, spolehlivě a s lidským přístupem.
+                </p>
+                <ul class="space-y-4 text-neutral-700 contact-list">
+                    <li class="flex items-center gap-4 opacity-0 translate-y-8 section-fade contact-list-item">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M9 3v2m6-2v2m-7 9h8m-8 4h5" />
+                        </svg>
+                        Pondělí - Pátek: 09:00 - 17:00
+                    </li>
+                    <li class="flex items-center gap-4 opacity-0 translate-y-8 section-fade contact-list-item">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 12A4 4 0 1 1 8 12a4 4 0 0 1 8 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v7m0 0H9m3 0h3" />
+                        </svg>
+                        <!-- info@modernizujme.cz -->
+                        info@nicnedluzim.cz
+                    </li>
+                    <li class="flex items-center gap-4 opacity-0 translate-y-8 section-fade contact-list-item">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10l1-2 3 3 3-3 4 4 5-5 2 2v6H3z" />
+                        </svg>
+                        +420 702 110 998
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="bg-white shadow-lg rounded-2xl p-6 opacity-0 translate-y-8 section-fade contact-form" id="contact-form">
+                <form action="#" method="post" class="space-y-4 contact-form-wrapper">
+                    <div class="contact-form-boxes">
+                        <div class="contact-form-box">
+                            <label for="name" class="block text-sm font-medium text-neutral-700">
+                                Jméno
+                            </label>
+                            <input type="text" class="mt-4 block w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus-ring-blue-600 contact-form-field" id="name" name="name" autocomplete="off" placeholder="Jan Novák">
+                        </div>
+                        <div class="mt-2 contact-form-box">
+                            <label for="email" class="block text-sm font-medium text-neutral-700">
+                                Mail
+                            </label>
+                            <input type="email" class="mt-4 block w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus-ring-blue-600 contact-form-field" id="email" name="email" autocomplete="off" placeholder="jan.novak@seznam.cz">
+                        </div>
+                        <div class="mt-2 contact-form-box">
+                            <label for="message" class="block text-sm font-medium text-neutral-700">
+                                Zpráva
+                            </label>
+                            <textarea type="text" class="mt-4 block h-[200px] w-full border border-gray-300 rounded-lg px-4 py-2 resize-none focus:outline-none focus:ring-2 focus-ring-blue-500 contact-form-field" id="message" name="message" autocomplete="off" placeholder="Dobrý den, zajímá mě jak dlouho trvá proces žádosti o oddlužení. Děkuji a přeji hezký den Jan Novák"></textarea>
+                        </div>
+                        <button class="bg-blue-600 mt-4 text-white font-semibold px-6 py-2 rounded-lg transition contact-form-cta-link section-main-cta-link">
+                            Odeslat mojí zprávu
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-gray-50 px-6 py-24 border-t border-[#f1f1f1] section-scroll-pinning-effect section step-by-step" id="step-by-step">
+        <div class="max-w-7xl mx-auto step-by-step-wrapper">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 uppercase text-neutral-900 tracking-tight opacity-0 translate-y-8 section-fade step-by-step-main-heading section-main-heading">
+                Jak to funguje
+            </h2>
+            <p class="text-lg text-center mb-12 step-by-step-main-subheadline section-main-subheadline">
+                Celý proces ve 3 jednoduchých krocích
+            </p>
+
+            <div class="grid gap-8 md:grid-cols-3 step-by-step-cards">
+
+                <div class="text-center p-6 bg-white rounded-2xl shadow-lg opacity-0 translate-y-8 section-fade step-by-step-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-600 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2 5.5C2 4.67 2.67 4 3.5 4h2.1c.38 0 .72.21.89.55l1.44 2.89a1 1 0 01-.2 1.13L6.3 10.7a16.07 16.07 0 007 7l2.13-1.43a1 1 0 011.13-.2l2.89 1.44c.34.17.55.51.55.89v2.1c0 .83-.67 1.5-1.5 1.5H18C8.61 21 3 15.39 3 6V5.5z"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2 step-by-step-card-main-heading section-card-main-heading">
+                        Kontaktujte nás
+                    </h3>
+                    <p class="text-neutral-600 step-by-step-card-main-subheadline section-card-main-subheadline">
+                        Spojte se s námi telefonicky nebo emailem a probereme Vaši poptávku.
+                    </p>
+                </div>
+
+                <div class="text-center p-6 bg-white rounded-2xl shadow-lg opacity-0 translate-y-8 section-fade step-by-step-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-600 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="16.65" y1="16.65" x2="21" y2="21" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2 step-by-step-card-main-heading section-card-main-heading">
+                        Analýza požadavků
+                    </h3>
+                    <p class="text-neutral-600 step-by-step-card-main-subheadline section-card-main-subheadline">
+                        Pečlivě zanalyzujeme Vaše potřeby a navrhneme nejlepší řešení.
+                    </p>
+                </div>
+
+                <div class="text-center p-6 bg-white rounded-2xl shadow-lg opacity-0 translate-y-8 section-fade step-by-step-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-600 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2 step-by-step-card-main-heading section-card-main-heading">
+                        Hotovo
+                    </h3>
+                    <p class="text-neutral-600 step-by-step-card-main-subheadline section-card-main-subheadline">
+                        Realizujeme projekt a předáme Vám hotový výsledek k plné spokojenosti.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="bg-white px-6 py-24 border-t border-[#f1f1f1] footer section-scroll-pinning-effect" id="footer">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 items-center footer-wrapper">
+            <div class="md:col-span-2 footer-text-content">
+                <!-- text-blue-600 -->
+                <h3 class="text-3xl font-bold mb-4 footer-main-heading section-main-heading">
+                    Nicnedlužím.cz
+                </h3>
+                <p class="text-neutral-600 leading-relaxed footer-main-subheadline section-main-subheadline">
+                    Poskytujeme profesionální služby s důrazem na kvalitu a spokojenost zákazníků.
+                </p>
+
+                <div class="footer-fast-links">
+                    <h4 class="text-lg font-semibold mt-2 mb-4 footer-fast-links-main-heading section-card-main-heading">
+                        Rychlé odkazy
+                    </h4>
+                    <ul class="space-y-2 footer-fast-links-list">
+                        <li class="footer-fast-links-list-item">
+                            <a href="#hero" class="text-neutral-600 transition footer-fast-links-list-item-link">
+                                Domů
+                            </a>
+                        </li>
+                        <li class="footer-fast-links-list-item">
+                            <a href="#about" class="text-neutral-600 transition footer-fast-links-list-item-link">
+                                O nás
+                            </a>
+                        </li>
+                        <li class="footer-fast-links-list-item">
+                            <a href="#services" class="text-neutral-600 transition footer-fast-links-list-item-link">
+                                Služby
+                            </a>
+                        </li>
+                        <li class="footer-fast-links-list-item">
+                            <a href="#contact" class="text-neutral-600 transition footer-fast-links-list-item-link">
+                                Kontakt
+                            </a>
+                        </li>
+                        <li class="footer-fast-links-list-item">
+                            <a href="#step-by-step" class="text-neutral-600 transition footer-fast-links-list-item-link">
+                                Jak to funguje
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-socials">
+                    <h4 class="text-lg font-semibold mt-4 footer-socials-main-heading section-card-main-heading">
+                        Sledujte nás
+                    </h4>
+                    <div class="flex space-x-4 mt-4 footer-socials-wrapper">
+                        <a href="#" class="text-blue-600 transition footer-socials-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.342v21.316C0 23.4.6 24 1.342 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.658-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.59l-.467 3.622h-3.123V24h6.116C23.4 24 24 23.4 24 22.658V1.342C24 .6 23.4 0 22.675 0z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-blue-600 transition footer-socials-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.342 3.608 1.317.975.975 1.255 2.242 1.317 3.608.058 1.266.07 1.646.07 4.842s-.012 3.576-.07 4.842c-.062 1.366-.342 2.633-1.317 3.608-.975.975-2.242 1.255-3.608 1.317-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.342-3.608-1.317-.975-.975-1.255-2.242-1.317-3.608C2.175 15.58 2.163 15.2 2.163 12s.012-3.576.07-4.842c.062-1.366.342-2.633 1.317-3.608.975-.975 2.242-1.255 3.608-1.317C8.416 2.175 8.796 2.163 12 2.163zm0 1.622c-3.17 0-3.548.012-4.795.07-1.043.048-1.61.215-1.982.362-.5.194-.86.427-1.236.803-.376.376-.609.736-.803 1.236-.147.372-.314.939-.362 1.982-.058 1.247-.07 1.625-.07 4.795s.012 3.548.07 4.795c.048 1.043.215 1.61.362 1.982.194.5.427.86.803 1.236.376.376.736.609 1.236.803.372.147.939.314 1.982.362 1.247.058 1.625.07 4.795.07s3.548-.012 4.795-.07c1.043-.048 1.61-.215 1.982-.362.5-.194.86-.427 1.236-.803.376-.376.609-.736.803-1.236.147-.372.314-.939.362-1.982.058-1.247.07-1.625.07-4.795s-.012-3.548-.07-4.795c-.048-1.043-.215-1.61-.362-1.982-.194-.5-.427-.86-.803-1.236-.376-.376-.736-.609-1.236-.803-.372-.147-.939-.314-1.982-.362-1.247-.058-1.625-.07-4.795-.07zm0 3.905a5.932 5.932 0 110 11.865 5.932 5.932 0 010-11.865zm0 1.622a4.31 4.31 0 100 8.621 4.31 4.31 0 000-8.621zm6.406-2.79a1.44 1.44 0 110 2.881 1.44 1.44 0 010-2.881z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hidden md:block footer-image-wrapper">
+                <img src="images/Lawyer.jpg"
+                alt="Lawyer"
+                loading="lazy"
+                decoding="async"
+                class="rounded-lg shadow-lg object-cover w-full footer-image">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/index.js" type="text/javascript"></script>
+    <!-- <script src="js/nav.js" type="text/javascript"></script> -->
+</body>
+</html>
