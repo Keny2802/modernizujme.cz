@@ -158,3 +158,15 @@ document.addEventListener("DOMContentLoaded", function(evt) {
         });
     });
 });
+
+document.addEventListener("click", function(evt) {
+    const target = evt.target;
+    const clickedInsidePanel = mobileMenu.contains(target);
+    const clickedToggleBTN = hamburgerMenuBTN.contains(target);
+
+    if (!clickedInsidePanel && !clickedToggleBTN) {
+        headerLogo.classList.remove("hidden");
+        mobileMenu.classList.remove("open");
+        hamburgerMenuBTN.classList.remove("open");
+    };
+});
