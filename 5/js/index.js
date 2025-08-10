@@ -21,6 +21,7 @@ let touchEndX = 0;
 
 const sectionCTALinks = document.querySelectorAll(".section-main-cta-link");
 const hashNavLinks = document.querySelectorAll(".hash-nav-link");
+const sectionFades = document.querySelectorAll(".section-fade");
 const footerLinks = document.querySelectorAll(".footer-fast-links-list-item-link");
 
 window.addEventListener("scroll", function(evt) {
@@ -139,3 +140,21 @@ function handleSwipeGesture() {
 };
 
 updateCarousel();
+
+document.addEventListener("DOMContentLoaded", function(evt) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".section-fade").forEach((item, index) => {
+        gsap.to(item, {
+            scrollTrigger: {
+                trigger: item,
+                start: "top 85%"
+            },
+
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out"
+        });
+    });
+});

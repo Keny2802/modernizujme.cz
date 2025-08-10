@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth overscroll-none">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,9 @@
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
-<body class="bg-white text-gray-900 font-sans overflow-x-hidden overscroll-none">
+<body class="bg-white text-gray-900 font-sans overflow-x-hidden">
 
     <header class="w-full fixed top-0 left-0 z-50 shadow-sm header" id="header">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 header-wrapper">
@@ -89,10 +90,10 @@
         class="absolute inset-0 h-full w-full bg-center object-cover hero-image">
 
         <div class="relative max-w-7xl mx-auto text-center hero-text-content">
-            <h1 class="text-5xl font-bold tracking-tight hero-main-heading section-main-heading">
+            <h1 class="text-5xl font-bold tracking-tight opacity-0 translate-y-8 section-fade hero-main-heading section-main-heading" data-gsap>
                 Prémiové byty v srdci města
             </h1>
-            <p class="mt-6 text-lg text-gray-200 max-w-2xl mx-auto hero-main-subheadline section-main-subheadline">
+            <p class="mt-6 text-lg text-gray-200 max-w-2xl mx-auto opacity-0 translate-y-8 section-fade hero-main-subheadline section-main-subheadline">
                 Moderní bydlení s elegancí a pohodlím, které si zasloužíte.
             </p>
             <a href="#flat-offers" class="mt-8 inline-block bg-[#d4af37] text-black px-6 py-3 rounded-full font-semibold transition hero-main-cta-link section-main-cta-link hash-nav-link">
@@ -104,10 +105,10 @@
     <section class="bg-gray-50 px-6 py-24 about" id="about">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center about-wrapper">
             <div class="about-text-content-wrapper">
-                <h2 class="text-4xl font-bold mb-6 uppercase tracking-tight about-main-heading section-main-heading">
+                <h2 class="text-4xl text-[#d4af37] font-bold mb-6 uppercase tracking-tight opacity-0 translate-y-8 section-fade about-main-heading section-main-heading">
                     O nás
                 </h2>
-                <p class="text-gray-700 leading-relaxed mb-4 about-main-subheadline section-main-subheadline">
+                <p class="text-gray-700 leading-relaxed mb-4 opacity-0 translate-y-8 section-fade about-main-subheadline section-main-subheadline">
                     Naše dva činžovní domy se nachází na ulici
                     <strong class="strong">
                         Freyova
@@ -123,7 +124,7 @@
                     Byly postaveny v 50. letech 20. století a nesou s sebou kus historie
                     a charakteru.
                 </p>
-                <p class="text-gray-700 leading-relaxed mb-4 about-main-second-subheadline section-main-second-subheadline">
+                <p class="text-gray-700 leading-relaxed mb-4 opacity-0 translate-y-8 section-fade about-main-second-subheadline section-main-second-subheadline">
                     V devadesátých letech tyto domy koupil náš děda
                     <a href="#contact" class="hash-nav-link">
                         <strong class="strong">
@@ -203,16 +204,20 @@
                     </div>
                 </div>
 
-                <button id="prev" aria-label="Předchozí" class="absolute top-1/2 left-2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-90 rounded-full p-3 shadow-lg text-gray-800 slider-btn">
+                <!-- md:top-1/2 top-[50%] -->
+                <button id="prev" aria-label="Předchozí" class="absolute top-1/2 left-2 -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-3 shadow-lg text-gray-800 slider-btn">
                     <!-- šipka vlevo -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
                     </svg>
                 </button>
-                <button id="next" aria-label="Další" class="absolute top-1/2 right-2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-90 rounded-full p-3 shadow-lg text-gray-800 slider-btn">
+
+                <!-- top-1/2 -->
+                 <!-- top-[40%] sm:top-1/2 -->
+                <button id="next" aria-label="Další" class="absolute top-1/2 right-2 -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-3 shadow-lg text-gray-800 slider-btn">
                     <!-- šipka vpravo -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
                 </button>
 
@@ -229,10 +234,10 @@
     <!-- bg-gray-900 -->
     <section class="bg-neutral-200 text-white px-6 py-24 flat-offers" id="flat-offers">
         <div class="max-w-7xl mx-auto flat-offers-wrapper">
-            <h2 class="text-4xl font-bold uppercase tracking-tight mb-10 text-[#d4af37] flat-offers-main-heading section-main-heading">
+            <h2 class="text-4xl font-bold uppercase tracking-tight mb-10 text-[#d4af37] opacity-0 translate-y-8 section-fade flat-offers-main-heading section-main-heading">
                 Nabídka bytů
             </h2>
-            <p class="max-w-3xl mx-auto text-center text-gray-400 mb-12 flat-offers-main-subheadline section-main-subheadline">
+            <p class="max-w-3xl mx-auto text-center text-gray-400 mb-12 opacity-0 translate-y-8 section-fade flat-offers-main-subheadline section-main-subheadline">
                 Nabízíme různé byty v dobře udržovaných činžovních domech na Freyově ulici v Praze 9 - Vysočanech.  
                 Byty jsou prostorné, světlé a vhodné jak pro jednotlivce, tak pro páry.  
                 Každý byt má své kouzlo a výhody - přesvědčte se sami v naší aktuální nabídce.
@@ -242,6 +247,7 @@
 
                 <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden cursor-pointer flat-offer">
                     <!-- h-48 -->
+                     <!-- h-64 -->
                     <img
                     src="images/53B (6).jpg"
                     loading="lazy"
@@ -306,9 +312,211 @@
         </div>
     </section>
 
-    <section class="contact" id="contact"></section>
+    <section class="bg-gray-50 text-white px-6 py-24 contact" id="contact">
+        <div class="max-w-7xl mx-auto text-center contact-wrapper">
+            <h2 class="text-4xl font-bold uppercase tracking-tight mb-6 text-[#d4af37] opacity-0 translate-y-8 section-fade contact-main-heading section-main-heading">
+                Kontaktujte nás
+            </h2>
+            <p class="max-w-3xl mx-auto text-gray-400 mb-12 opacity-0 translate-y-8 section-fade contact-main-subheadline section-main-subheadline">
+                Máte zájem o prohlídku bytu nebo další otázky? Neváhejte nás kontaktovat.
+                Jsme tu, abychom Vám pomohli najít ideální bydlení na Freyově ulici v Praze 9 - Vysočanech.
+            </p>
 
-    <footer class="footer" id="footer"></footer>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto text-left contact-text-content contact-form-groups">
+                <div class="space-y-6 contact-text-content-wrapper contact-form-groups-wrapper">
+
+                    <div class="contact-form-group-text-content-wrapper">
+                        
+                        <div class="contact-form-group">
+                            <h3 class="text-2xl font-semibold text-[#d4af37] mb-2 form-group-main-heading">
+                                Miloš Oliva - Majitel
+                            </h3>
+                            <p class="text-gray-300 mb-1 form-group-main-subheadline">
+                                Tel:
+                                <a href="tel:+420602325202" target="_blank" class="text-[#d4af37] form-group-main-cta-link hash-nav-link">
+                                    602 325 202
+                                </a>
+                            </p>
+                            <p class="text-gray-300 form-group-main-second-subheadline">
+                                Mail:
+                                <a href="mailto:oliva.milos@seznam.cz" target="_blank" class="text-[#d4af37] form-group-main-cta-link hash-nav-link">
+                                    oliva.milos@seznam.cz
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="contact-form-group">
+                            <h3 class="text-2xl font-semibold text-[#d4af37] mb-2 form-group-main-heading">
+                                Kateřina Olivová - Správkyně
+                            </h3>
+                            <p class="text-gray-300 mb-1 form-group-main-subheadline">
+                                Tel:
+                                <a href="tel:+420602104886" target="_blank" class="text-[#d4af37] form-group-main-cta-link">
+                                    602 104 886
+                                </a>
+                            </p>
+                            <p class="text-gray-300 form-group-main-second-subheadline">
+                                Mail:
+                                <a href="mailto:olivova.k@seznam.cz" class="text-[#d4af37] form-group-main-cta-link">
+                                    olivova.k@seznam.cz
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="mt-8 text-gray-400 space-y-4 contact-form-group-text-blocks-wrapper">
+                            <p class="contact-form-group-text-block-content">
+                                Prosíme, volejte v pracovní dny od
+                                <strong class="strong">
+                                    pondělí do pátku
+                                </strong>
+                                mezi
+                                <strong class="strong">
+                                    10:00 - 17:00
+                                </strong>.
+                            </p>
+                            <p class="opacity-0 translate-y-8 section-fade contact-form-group-text-block-content">
+                                Prohlídky bytů probíhají každý všední den večer od
+                                <strong class="strong">
+                                    18:00 do 20:00
+                                </strong>.
+                                Rádi se Vám přizpůsobíme, proto nás neváhejte kontaktovat.
+                            </p>
+                            <p class="opacity-0 translate-y-8 section-fade contact-form-group-text-block-content">
+                                Těšíme se na Váš zájem a jsme připraveni Vám pomoci
+                                s výběrem ideálního bydlení.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <form action="#" method="POST" class="space-y-6 bg-gray-800 p-8 rounded-xl shadow-lg form">
+                    <h3 class="text-2xl font-semibold text-[#d4af37] mb-4 form-main-heading">
+                        Napište nám zprávu
+                    </h3>
+
+                    <input
+                    type="text"
+                    name="text"
+                    id="form-group-input-name"
+                    class="w-full p-3 rounded-md bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#d4af37] form-group-input form-group-input-name"
+                    placeholder="Jan Novák"
+                    autocomplete="off"
+                    required>
+
+                    <input
+                    type="email"
+                    name="email"
+                    id="form-group-input-mail"
+                    class="w-full p-3 rounded-md bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#d4af37] form-group-input form-group-input-mail"
+                    placeholder="jan.novak@seznam.cz"
+                    autocomplete="off"
+                    required>
+
+                    <textarea
+                    name="message"
+                    id="form-group-text-area"
+                    class="resize-none h-32 w-full p-3 rounded-md bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#d4af37] form-group-text-area form-group-text-area-message"
+                    placeholder="Dobrý den, chtěl bych si domluvit prohlídku bytu 53B. Děkuji a přeji hezký den, Jan Novák"
+                    autocomplete="off"
+                    required></textarea>
+
+                    <button
+                    type="submit"
+                    class="w-full bg-[#d4af37] text-gray-900 font-bold py-3 rounded-md transition-colors form-group-submit-btn">
+                        Zaslat zprávu
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 px-6 py-12 footer" id="footer">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 footer-wrapper">
+            
+            <div class="header-logo-wrapper">
+                <h3 class="text-3xl text-neutral-200 uppercase font-bold tracking-tight header-logo-content">
+                    Byty Freyova
+                </h3>
+                <p class="text-gray-400 leading-relaxed mt-4 header-logo-content-about">
+                    Bydlení v srdci Vysočan. Naše domy kombinují historii
+                    s moderním komfortem a rodinnou atmosférou.
+                </p>
+            </div>
+
+            <div class="footer-navigation">
+                <h4 class="text-lg font-semibold text-[#d4af37] mb-4 footer-navigation-main-heading">
+                    Navigace
+                </h4>
+                <ul class="space-y-2 footer-navigation-list">
+                    <li class="footer-navigation-list-item">
+                        <a href="#hero" class="transition-colors hash-nav-link footer-navigation-list-item-link">
+                            Domů
+                        </a>
+                    </li>
+                    <li class="footer-navigation-list-item">
+                        <a href="#about" class="transition-colors hash-nav-link footer-navigation-list-item-link">
+                            O nás
+                        </a>
+                    </li>
+                    <li class="footer-navigation-list-item">
+                        <a href="#flats-offer" class="transition-colors hash-nav-link footer-navigation-list-item-link">
+                            Nabídka
+                        </a>
+                    </li>
+                    <li class="footer-navigation-list-item">
+                        <a href="#contact" class="transition-colors hash-nav-link footer-navigation-list-item-link">
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 class="text-lg font-semibold text-[#d4af37] mb-4 footer-contact-main-heading">
+                    Kontakt
+                </h4>
+                <ul class="space-y-2 footer-contact-list">
+                    <li class="footer-contact-list-item">
+                        <strong class="text-white strong">
+                            Miloš Oliva
+                        </strong>
+                        <a href="tel:+420602325200" class="text-[#d4af37] footer-contact-list-item-link">
+                            602 325 202
+                        </a>
+                    </li>
+                    <li class="footer-contact-list-item">
+                        <a href="mailto:oliva.milos@seznam.cz" class="transition-colors footer-contact-list-item-link">
+                            oliva.milos@seznam.cz
+                        </a>
+                    </li>
+                    <li class="footer-contact-list-item">
+                        <strong class="text-white strong">
+                            Kateřina Olivová
+                        </strong>
+                        <a href="tel:420602104886" class="text-[#d4af37] footer-contact-list-item-link">
+                            602 104 886
+                        </a>
+                    </li>
+                    <li class="footer-contact-list-item">
+                        <a href="mailto:olivova.k@seznam.cz" class="transition-colors footer-contact-list-item-link">
+                            olivova.k@seznam.cz
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-700 mt-12 pt-6 text-center text-gray-500 text-sm footer-rights-wrapper">
+            <p class="footer-rights-content">
+                &copy; 2025 BYTY FREYOVA. Všechna práva vyhrazena.
+            </p>
+        </div>
+    </footer>
 
     <script src="js/index.js"></script>
 </body>

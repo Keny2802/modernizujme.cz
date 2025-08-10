@@ -1,3 +1,14 @@
+:root {
+    --white: #ffffff;
+    --blue-400: #60a5fa;
+    --blue-500: #3b82f6;
+    --blue-600: #2563eb;
+    --blue-700: #1d4ed8;
+    --blue-800: #1e40af;
+    --yellow-400: #d4af37;
+    --yellow-500: #eab308;
+}
+
 @media (min-width: 48rem) {
     .side-panel {
         transform: none;
@@ -9,12 +20,12 @@
     }
 }
 
-@media screen and (max-width: 46.87rem) {
+/* @media screen and (max-width: 46.87rem) {
     .slider-btn {
         top: 52%;
         transform: translateY(52%);
     }
-}
+} */
 
 /* @media screen and (max-width: 43.75rem) {
     .about-contacts {
@@ -27,10 +38,10 @@
         font-size: 2.18rem;
     }
 
-    .slider-btn {
+    /* .slider-btn {
         top: 52%;
         transform: translateY(52%);
-    }
+    } */
 }
 
 @media (hover: hover) {
@@ -51,6 +62,27 @@
     } */
 
     .flat-offer-main-cta-link:hover {
+        text-decoration: underline;
+    }
+
+    .form-group-main-cta-link:hover {
+        text-decoration: underline;
+    }
+
+    .form-group-main-subheadline:hover,
+    .form-group-main-second-subheadline:hover {
+        text-decoration: underline;
+    }
+
+    .form-group-submit-btn:hover {
+        background: var(--yellow-500);
+    }
+
+    .footer-navigation-list-item-link:hover {
+        color: var(--yellow-400);
+    }
+
+    .footer-contact-list-item-link:hover {
         text-decoration: underline;
     }
 }
