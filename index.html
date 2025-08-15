@@ -1,393 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="scroll-smooth overscroll-none html">
+<head class="head">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Web Developera - Vojta Oliva</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/Picture (1).png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="Portfolio Vojty Olivy - Web developer specializující se na moderní weby, aplikace a software, Kvalitní design a čistý kód.">
+    <meta name="keywords" content="web developer, portfolio, frontend, aplikace, software, moderní weby">
+    <meta name="author" content="Vojta Oliva">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Vojta Oliva | Web Developer">
+    <meta property="og:description" content="Portfolio Vojty Olivy - Web developer specializující se na moderní weby, aplikace a software.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://modernizujme.cz">
+    <!-- <meta property="og:image" content=""> content="https://www.tvoje-domena.cz/assets/social-preview.jpg" -->
+    <title class="title">
+        Vojta Oliva | Web Developer
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
-<body>
-    <div class="header">
-        <div class="header-container">
-            <div class="logo">
-                <p class="content">
-                    Vojta Oliva
+<body class="overflow-x-hidden bg-gray-900 text-white body">
+    <a href="#" class="hidden fixed bottom-4 right-4 z-50 h-12 w-12 rounded-full bg-yellow-400 text-gray-900 shadow-lg grid place-items-center transition active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-500 scroll-sect-btn hash-nav-link" id="scroll-sect-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+        </svg>
+    </a>
+    <!-- backdrop-blur-lg bg-gray-900/70 -->
+    <header class="fixed top-0 left-0 w-full z-50 header">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 header-wrapper">
+            <div class="header-logo-wrapper">
+                <p class="text-3xl text-neutral-200 uppercase font-bold tracking-tight header-logo-content">
+                    <!-- vojtaoliva.dev -->
+                    Modernizujme.cz
                 </p>
             </div>
-            <ul class="items">
-                <!-- <li class="header-item">
-                    <a href="#projects" class="header-link">
-                        Projekty
-                    </a>
-                </li> -->
-                <li class="header-item">
-                    <a href="#services" class="header-link">
-                        Služby
-                    </a>
-                </li>
-                <li class="header-item">
-                    <a href="#prices" class="header-link">
-                        Ceník
-                    </a>
-                </li>
-                <li class="header-item">
-                    <a href="#contact" class="header-link">
-                        Kontakt
-                    </a>
-                </li>
-            </ul>
-            <a href="tel:+420737007626" class="cta">
-                Kontaktovat mě
-            </a>
-            <button class="mobile-menu-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1f1f1f">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-                </svg>
+
+            <nav class="hidden md:flex gap-6 text-sm font-medium text-neutral-200 nav-links-wrapper">
+                <a href="#hero" class="transition header-nav-link hash-nav-link nav-link">
+                    Domů
+                </a>
+                <a href="#about" class="transition header-nav-link hash-nav-link nav-link">
+                    O mně
+                </a>
+                <a href="#projects" class="transition header-nav-link hash-nav-link nav-link">
+                    Projekty
+                </a>
+                <a href="#offers" class="transition header-nav-link hash-nav-link nav-link">
+                    Nabídka
+                </a>
+                <a href="#contact" class="transition header-nav-link hash-nav-link nav-link">
+                    Kontakt
+                </a>
+            </nav>
+
+            <!-- mt-4 ml-auto -->
+            <button class="md:hidden z-50 mt-4 ml-auto flex flex-col items-center gap-[5px] h-6 w-6 focus:outline-none group hamburger-btn" id="hamburger-btn">
+                <span class="block h-[2px] w-full bg-white rounded transition-transform duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-[6px]"></span>
+                <span class="block h-[2px] w-full bg-white rounded transition-opacity duration-300 group-[.open]:opacity-0"></span>
+                <span class="block h-[2px] w-full bg-white rounded transition-transform duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-[6px]"></span>
             </button>
         </div>
-    </div>
-    <div class="mobile-menu">
-        <div class="mobile-menu-container">
-            <div class="line">
-                <div class="logo">
-                    <img src="images/Picture (1).png" alt="Profile Picture" loading="lazy" class="profile-picture">
-                    <p class="content">
-                        Vojta Oliva
-                    </p>
-                </div>
-                <button class="mobile-menu-close-icon"></button>
-            </div>
-            <ul class="mobile-menu-items">
-                <!-- <li class="mobile-menu-item">
-                    <a href="#projects" class="mobile-menu-link">
-                        Projekty
-                    </a>
-                </li> -->
-                <li class="mobile-menu-item">
-                    <a href="#services" class="mobile-menu-link">
-                        Služby
-                    </a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a href="#prices" class="mobile-menu-link">
-                        Ceník
-                    </a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a href="#contact" class="mobile-menu-link">
-                        Kontakt
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="hero">
-        <div class="hero-container">
-            <div class="left-col">
-                <div class="text-content">
-                    <h2 class="heading">
-                        Vojta Oliva
-                    </h2>
-                    <p class="profession">
-                        Web developer a softwarový vývojář
-                    </p>
-                    <p class="subheading">
-                        <!-- Tvořím weby, softwary a appky, které fungují a vydělávají. -->
-                        Tvořím moderní weby, aplikace a softwary na míru, které nejen fungují, ale přinášejí výsledky. Můj přístup je orientovaný na uživatele, kvalitní kód a efektivní řešení pro každého klienta. Ať už jde o weby pro malé podniky, nebo složité aplikace, vždy se zaměřuji na to, aby splnily vaše konkrétní potřeby a cíle.
-                        Pokud hledáte vývojáře, který nejen kóduje, ale také přemýšlí o budoucnosti vašeho projektu, jste na správném místě.
-                    </p>
-                </div>
-                <div class="socials">
-                    <div class="socials-container"></div>
-                    <div class="attachments-container"></div>
-                </div>
-                <div class="ctas">
-                    <a href="#" class="cta">
-                        Najměte si mě
-                    </a>
-                    <a href="tel:+420737007626" class="cta">
-                        Kontaktovat
-                    </a>
-                </div>
-            </div>
-            <div class="right-col">
-                <div class="picture">
-                    <img src="images/Picture (1).png" loading="lazy" alt="Me">
-                </div>
-                <div class="text-content-container">
-                    <div class="tech-stack">
-                        <i class="tech-stack-icon bx bxl-html5 html-icon"></i>
-                        <i class="tech-stack-icon bx bxl-css3 css-icon"></i>
-                        <i class="tech-stack-icon bx bxl-tailwind-css tailwind-css-icon"></i>
-                        <i class="tech-stack-icon bx bxl-nodejs nodejs-icon"></i>
-                        <i class="tech-stack-icon bx bxl-vuejs vuejs-icon"></i>
-                        <i class="tech-stack-icon bx bxl-php php-icon"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="services" id="services">
-        <div class="services-container">
-            <h2 class="heading">
-                Služby pro Váš web
-            </h2>
-            <div class="services-wrapper">
-                <div class="service">
-                    <!-- <i class="bx bx-desktop service-icon"></i> -->
-                    <h3 class="service-heading">
-                        <span class="service-icon">
-                            🖥️
-                        </span>
-                        Tvorba webů
-                    </h3>
-                    <p class="service-description">
-                        Responzivní a moderní weby na míru - rychlé, přehledné a přístupné.
-                    </p>
-                    <ul class="benefits">
-                        <li class="benefit">
-                            Responzivní design pro mobil, tablet i počítač
-                        </li>
-                        <li class="benefit">
-                            Rychlé načítání a čistý kód
-                        </li>
-                        <li class="benefit">
-                            Moderní vizuál přizpůsobený klientovi
-                        </li>
-                        <li class="benefit">
-                            Možnost napojení na kontaktní formulář, mapu nebo galerii
-                        </li>
-                    </ul>
-                </div>
-                <div class="service">
-                    <!-- <i class="bx bxs-wrench service-icon"></i> -->
-                    <h3 class="service-heading">
-                        <span class="service-icon">
-                            🛠️
-                        </span>
-                        Správa a údržba
-                    </h3>
-                    <p class="service-description">
-                        Postarám se o aktualizace, zabezpečení a běžnou údržbu vašich webů.
-                    </p>
-                    <ul class="benefits">
-                        <li class="benefit">
-                            Pravidelné aktualizace a kontrola funkčnosti
-                        </li>
-                        <li class="benefit">
-                            Zálohování webu a obnova v případě problémů
-                        </li>
-                        <li class="benefit">
-                            Oprava chyb a optimalizace výkonu
-                        </li>
-                        <li class="benefit">
-                            Bezpečnostní dohled a ochrana proti útokům
-                        </li>
-                    </ul>
-                </div>
-                <div class="service">
-                    <!-- <i class="bx bx-brain service-icon"></i> -->
-                    <h3 class="service-heading">
-                        <span class="service-icon">
-                            🧠
-                        </span>
-                        Vývoj software
-                    </h3>
-                    <p class="service-description">
-                        Aplikace a systémy na míru - evidence, sklady, interní nástroje pro firmy.
-                    </p>
-                    <ul class="benefits">
-                        <li class="benefit">
-                            Přesně podle potřeb vaší firmy nebo projektu
-                        </li>
-                        <li class="benefit">
-                            Intuitivní rozhraní pro snadné používání
-                        </li>
-                        <li class="benefit">
-                            Databáze klientů, skladů, objednávek apod.
-                        </li>
-                        <li class="benefit">
-                            Možnost budoucího rozšíření funkcí
-                        </li>
-                    </ul>
-                </div>
-                <div class="service">
-                    <!-- <i class="bx bx-bar-chart service-icon"></i> -->
-                    <h3 class="service-heading">
-                        <span class="service-icon">
-                            🔍
-                        </span>
-                        SEO a Optimalizace výkonu
-                    </h3>
-                    <p class="service-description">
-                        Zrychlím váš web, upravím strukturu a pomohu, aby vás našli zákazníci na Googlu.
-                    </p>
-                    <ul class="benefits">
-                        <li class="benefit">
-                            Zrychlení načítání webu (Core Web Vitals)
-                        </li>
-                        <li class="benefit">
-                            Základní SEO nastavení (titles, metapopisky, nadpisy)
-                        </li>
-                        <li class="benefit">
-                            Optimalizace obrázků a velikosti stránek
-                        </li>
-                        <li class="benefit">
-                            Lepší viditelnost na Googlu a vyšší návštěvnost
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="contact-me-container">
-                <a href="tel:+420737007626" class="contact-me">
-                    Nezávazně poptat
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="prices" id="prices">
-        <div class="prices-container">
-            <h2 class="heading">
-                <!-- Transparentní a férové ceny. Přesně víte, co kupujete -->
-                Ceník služeb
-            </h2>
-            <div class="prices-wrapper">
-                <div class="price">
-                    <div class="price-wrapper">
-                        <div class="label">
-                            <span class="label-content">
-                                Start
-                            </span>
-                        </div>
-                        <h3 class="price-heading">
-                            <span class="price-icon">
-                                💼
-                            </span>
-                            Rychlý start pro vaši online přítomnost
-                        </h3>
-                        <p class="price-description">
-                            Jednoduchý, ale profesionální web ideální pro osobní prezentaci nebo menší podnikání.
-                        </p>
-                        <strong class="strong-text">
-                            V ceně
-                        </strong>
-                        <ul class="contains">
-                            <li class="contain">
-                                Jednostránkový web (např. portfolio / vizitka)
-                            </li>
-                            <li class="contain">
-                                Responzivní design (mobil/tablet/PC)
-                            </li>
-                            <li class="contain">
-                                Základní kontaktní formulář
-                            </li>
-                            <li class="contain">
-                                Základní optimalizace výkonu
-                            </li>
-                            <li class="contain">
-                                Dodání do 3-5 dní
-                            </li>
-                        </ul>
-                        <p class="price-price">
-                            Od 4.000 Kč
-                        </p>
-                    </div>
-                </div>
-                <div class="price">
-                    <div class="price-wrapper">
-                        <div class="label">
-                            <span class="label-content">
-                                Profi
-                            </span>
-                        </div>
-                        <h3 class="price-heading">
-                            <span class="price-icon">
-                                📦
-                            </span>
-                            Profesionální web na míru pro vaše podnikání
-                        </h3>
-                        <p class="price-description">
-                            Komplexnější web s vícero stránkami a vyladěnou optimalizací pro běžné podnikání.
-                        </p>
-                        <strong class="strong-text">
-                            V ceně
-                        </strong>
-                        <ul class="contains">
-                            <li class="contain">
-                                Vícestránkový web (např. domů, služby, o nás, kontakt)
-                            </li>
-                            <li class="contain">
-                                Pokročilý formulář nebo galerie
-                            </li>
-                            <li class="contain">
-                                SEO optimalizace (titles, nadpisy, metapopisky)
-                            </li>
-                            <li class="contain">
-                                Rychlostní optimalizace (lazy load, minifikace)
-                            </li>
-                            <li class="contain">
-                                Zaškolení, jak si web upravovat
-                            </li>
-                        </ul>
-                        <p class="price-price">
-                            Od 8.000 Kč
-                        </p>
-                    </div>
-                </div>
-                <div class="price">
-                    <div class="price-wrapper">
-                        <div class="label">
-                            <span class="label-content">
-                                Max
-                            </span>
-                        </div>
-                        <h3 class="price-heading">
-                            <span class="price-icon">
-                                🚀
-                            </span>
-                            Prémiové řešení se správou a podporou
-                        </h3>
-                        <p class="price-description">
-                            Kompletní řešení na míru včetně dlouhodobé správy a analytiky. Ideální pro náročné projekty.
-                        </p>
-                        <strong class="strong-text">
-                            V ceně
-                        </strong>
-                        <ul class="contains">
-                            <li class="contain">
-                                Web + administrační systém / připojený software
-                            </li>
-                            <li class="contain">
-                                Pravidelná správa a aktualizace webu
-                            </li>
-                            <li class="contain">
-                                Pokročilé SEO a analytika (Google Analytics)
-                            </li>
-                            <li class="contain">
-                                Zabezpečení (SSL, ochrana proti útokům)
-                            </li>
-                            <li class="contain">
-                                Technická podpora po spuštění
-                            </li>
-                        </ul>
-                        <p class="price-price">
-                            Od 15.000 Kč
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="warning">
-                <p class="warning-content">
-                    Ceny jsou orientační a mohou se lišit dle konkrétního zadání. Každý projekt naceňuji individuálně.
+    </header>
+
+    <div class="opacity-0 z-50 fixed top-0 left-0 h-full w-80 backdrop-blur-md text-white side-panel" id="side-panel">
+        <div class="h-full p-6 flex flex-col gap-6 cursor-pointer side-panel-wrapper">
+            
+            <div class="side-panel-logo-wrapper">
+                <p class="uppercase font-bold text-white text-3xl text-neutral-200 tracking-tight side-panel-logo-content">
+                    Modernizujme.cz
                 </p>
             </div>
+
+            <a href="#hero" class="text-lg font-semibold border-b border-gray-800 transition side-panel-nav-link hash-nav-link nav-link">
+                Domů
+            </a>
+            <a href="#about" class="text-lg font-semibold border-b border-gray-800 transition side-panel-nav-link hash-nav-link nav-link">
+                O mně
+            </a>
+            <a href="#projects" class="text-lg font-semibold border-b border-gray-800 transition side-panel-nav-link hash-nav-link nav-link">
+                Projekty
+            </a>
+            <a href="#offers" class="text-lg font-semibold border-b border-gray-800 transition side-panel-nav-link hash-nav-link nav-link">
+                Nabídka
+            </a>
+            <a href="#contact" class="text-lg font-semibold border-b border-gray-800 transition side-panel-nav-link hash-nav-link nav-link">
+                Kontakt
+            </a>
+
+            <p class="mt-auto text-sm text-center text-gray-400 side-panel-text-content">
+                &copy;
+                <span class="side-panel-text-content-dynamic-year dynamic-year"></span>
+                Modernizujme.cz - Všechna práva vyhrazena
+            </p>
         </div>
     </div>
-    <div class="contact" id="contact"></div>
-    <footer class="footer"></footer>
-    <script src="home.js"></script>
+
+    <section class="relative h-screen flex justify-center items-center text-center hero" id="hero">
+        <div class="absolute inset-0 hero-wrapper">
+            <img
+            src="assets/Hero image.jpg"
+            alt="Minimalistické pracovní místo s notebookem, telefonem, zápisníkem a černou kávou na hnědém stole"
+            loading="lazy"
+            decoding="async"
+            class="h-full w-full object-cover hero-image">
+            <!-- alt="Notebook na hnědém stole s telefonem, zápisníkem, propiskou a šálkem černé kávy" -->
+            <!-- alt="Minimalistické pracovní místo s notebookem, telefonem, zápisníkem a černou kávou na hnědém stole" -->
+            <!-- alt="Stylové pracovní místo webového vývojáře s notebookem, zápisníkem a černou kávou" -->
+            <div class="absolute inset-0 bg-black/60 hero-image-dark-wrapper"></div>
+        </div>
+        <div class="relative z-10 px-4 max-w-3xl hero-text-content-wrapper">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 hero-main-heading section-main-heading">
+                Tvořím moderní weby, aplikace a softwary
+            </h1>
+            <p class="text-lg sm:text-lg md:text-xl mb-5 hero-main-subheading section-main-subheading">
+                Kvalitní design, čistý kód a nápady, které fungují.
+            </p>
+            <a href="#projects" class="inline-block px-6 py-4 mt-2 bg-yellow-400 text-black font-semibold rounded-lg transition hash-nav-link hero-main-cta-link section-main-cta-link">
+                Podívat se na projekty
+            </a>
+        </div>
+    </section>
+
+    <section class="py-16 about" id="about">
+        <div class="mx-auto px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-12 about-wrapper">
+            
+            <div class="flex-1 about-image-wrapper">
+                <img
+                src="assets/About me image 1.jpg"
+                alt="Moderní pracovní stůl s notebookem a otevřeným editorem kódu"
+                loading="lazy"
+                decoding="async"
+                class="rounded-2xl shadow-lg object-cover h-auto w-full about-image">
+            </div>
+
+            <div class="flex-1 text-center lg:text-left about-text-content-wrapper">
+                <h2 class="uppercase text-4xl font-bold mb-4 about-main-heading section-main-heading">
+                    O mně
+                </h2>
+                <h3 class="text-xl font-medium text-yellow-500 mb-4 about-main-medium-heading section-main-medium-heading about-typing-text" id="about-typing-text"></h3>
+                <p class="text-gray-500 mb-6 leading-relaxed about-main-subheading section-main-subheading">
+                    Jmenuji se Vojta Oliva a věnuji se tvorbě moderních webů, aplikaci a softwaru.
+                    Mým cílem je spojit estetiku a funkčnosti a tvořit řešení, která nejen dobře vypadají,
+                    ale i skvěle fungují. Mám zkušenosti s frontendem, backendem UX/UI designem.
+                </p>
+                <ul class="text-gray-500 mb-6 about-list">
+                    <li class="flex items-center gap-3 mb-2 about-list-item">
+                        <i class="bx bx-code text-yellow-400 text-xl about-list-item-icon"></i>
+                        Moderní weby a aplikace s čistým kódem
+                    </li>
+                    <li class="flex items-center gap-3 mb-2 about-list-item">
+                        <i class="bx bx-code text-yellow-400 text-xl about-list-item-icon"></i>
+                        UI/UX design a responzivní layouty
+                    </li>
+                    <li class="flex items-center gap-3 mb-2 about-list-item">
+                        <i class="bx bx-code text-yellow-400 text-xl about-list-item-icon"></i>
+                        Optimalizace výkonu a SEO-friendly kód
+                    </li>
+                </ul>
+                <div class="flex gap-4 mt-4 about-cta-wrapper">
+                    <a href="#projects" class="px-6 py-3 bg-yellow-400 text-black font-semibold rounded-lg mb-6 transition hash-nav-link about-main-cta-link section-main-cta-link">
+                        Podívat se na projekty
+                    </a>
+                    <a href="#contact" class="px-6 py-3 mb-6 border border-yellow-400 text-yellow-400 font-semibold rounded-lg transition hash-nav-link about-second-main-cta-link section-second-main-cta-link">
+                        Napište mi
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 border-t border-gray-800 projects" id="projects">
+        <div class="mx-auto px-6 lg:px-20 projects-wrapper">
+            
+            <div class="text-center mb-12 projects-text-content-wrapper">
+                <h2 class="text-4xl uppercase font-bold mb-4 projects-main-heading section-main-heading">
+                    Moje projekty
+                </h2>
+                <p class="text-gray-500 max-w-2xl mx-auto leading-relaxed">
+                    Ukázka některých mých prací - od moderních webových stránek,
+                    přes webové aplikace až po kreativní design.
+                </p>
+            </div>
+
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 projects-list-wrapper">
+
+                <div class="relative w-full max-w-sm mx-auto bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition project">
+                    <span class="absolute top-4 right-4 text-4xl font-extrabold text-yellow-500 z-10 project-number">
+                        01
+                    </span>
+                    <img
+                    src="assets/Projekty/Projekt MALÍŘI PROFI (projekt 01)-min.png"
+                    alt="Web Malíři profi - profesionální malíř usmívající se při natírání domu, nabídka malířských služeb"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full object-cover project-image">
+                    <div class="p-6 project-text-content-wrapper">
+                        <h3 class="text-xl font-semibold mb-2 project-main-heading section-box-main-heading">
+                            Malíři profi
+                        </h3>
+                        <p class="text-gray-300 text-sm mb-4 project-main-subheading section-box-main-subheading">
+                            Profesionální malířské a natěračské služby pro byty, domy a komerční prostory.
+                            Moderní web s přehlednou nabídkou a jednoduchým objednávkovým formulářem.
+                        </p>
+                        <!-- <a href="https://modernizujme.cz/1/index.html" target="_blank" rel="noopener noreferrer" class="inline-block text-yellow-500 font-medium project-main-cta-link section-box-main-cta-link">
+                            Zobrazit projekt
+                        </a> -->
+                    </div>
+                </div>
+
+                <div class="relative w-full max-w-sm mx-auto bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition project">
+                    <span class="absolute top-4 right-4 text-4xl font-extrabold text-yellow-500 z-10 project-number">
+                        02
+                    </span>
+                    <img
+                    src="assets/Projekty/Projekt KULHÁNEK SOFTWARE (projekt 02)-min.png"
+                    alt="Web Kulhánek Software - moderní software pro správu firemních procesů a databází"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full object-cover project-image">
+                    <div class="p-6 project-text-content-wrapper">
+                        <h3 class="text-xl font-semibold mb-2 project-main-heading section-box-main-heading">
+                            Kulhánek Software
+                        </h3>
+                        <p class="text-gray-300 text-sm mb-4 project-main-subheading section-box-main-subheading">
+                            Webová prezentace pro software na správu firemních procesů.
+                            Přehledná struktura, moderní design a snadná navigace pro uživatele.
+                        </p>
+                        <!-- <a href="https://modernizujme.cz/2/index.html" target="_blank" rel="noopener noreferrer" class="inline-block text-yellow-500 font-medium project-main-cta-link section-box-main-cta-link">
+                            Zobrazit projekt
+                        </a> -->
+                    </div>
+                </div>
+
+                <div class="relative w-full max-w-sm mx-auto bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition project">
+                    <span class="absolute top-4 right-4 text-4xl font-extrabold text-yellow-500 z-10 project-number">
+                        03
+                    </span>
+                    <img
+                    src="assets/Projekty/Projekt TORQUE DRIVE (projekt 03)-min.png"
+                    alt="Web TORQUE DRIVE - autopůjčovna amerických muscle cars a klasických amerických vozů"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full object-cover project-image">
+                    <div class="p-6 project-text-content-wrapper">
+                        <h3 class="text-xl font-semibold mb-2 project-main-heading section-box-main-heading">
+                            Torque Drive
+                        </h3>
+                        <p class="text-gray-300 text-sm mb-4 project-main-subheading section-box-main-subheading">
+                            Moderní web pro autopůjčovnu amerických muscle cars a klasických amerických vozů.
+                            Přehledná nabídka, fotogalerie vozů a jednoduchý rezervační formulář pro zákazníky.
+                        </p>
+                        <!-- <a href="https://modernizujme.cz/3/index.html" target="_blank" rel="noopener noreferrer" class="inline-block text-yellow-500 font-medium project-main-cta-link section-box-main-cta-link">
+                            Zobrazit projekt
+                        </a> -->
+                    </div>
+                </div>
+
+                <div class="relative w-full max-w-sm mx-auto bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition project">
+                    <span class="absolute top-4 right-4 text-4xl font-extrabold text-yellow-500 z-10 project-number">
+                        04
+                    </span>
+                    <img
+                    src="assets/Projekty/Projekt NIC NEDLUŽÍM (projekt 04)-min.png"
+                    alt="Web Nic NEDLUŽÍM - služby oddlužnění a poradenství pro lidi se závazky"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full object-cover project-image">
+                    <div class="p-6 project-text-content-wrapper">
+                        <h3 class="text-xl font-semibold mb-2 project-main-heading section-box-main-heading">
+                            Nic Nedlužím
+                        </h3>
+                        <p class="text-gray-300 text-sm mb-4 project-main-subheading section-box-main-subheading">
+                            Web pro služby oddlužení a poradenství. Přehledně zobrazuje možnosti
+                            řešení dluhů, kontaktní formulář a informace pro klienty, kteří hledají bezpečně
+                            a rychlé řešení svých závazků.
+                        </p>
+                        <!-- <a href="https://modernizujme.cz/4/index.html" target="_blank" rel="noopener noreferrer" class="inline-block text-yellow-500 font-medium project-main-cta-link section-box-main-cta-link">
+                            Zobrazit projekt
+                        </a> -->
+                    </div>
+                </div>
+
+                <div class="relative w-full max-w-sm mx-auto bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition project">
+                    <span class="absolute top-4 right-4 text-4xl font-extrabold text-yellow-500 z-10 project-number">
+                        05
+                    </span>
+                    <img
+                    src="assets/Projekty/Projekt BYTY FREYOVA (projekt 05)-min.png"
+                    alt="Web Byty Freyova - nabídka pronájmu bytů v činžovních domech na ulici Freyova"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full object-cover project-image">
+                    <!-- p-6 -->
+                    <div class="p-6 project-text-content-wrapper">
+                        <h3 class="text-xl font-semibold mb-2 project-main-heading section-box-main-heading">
+                            Byty Freyova
+                        </h3>
+                        <p class="text-gray-300 text-sm mb-4 project-main-subheading section-box-main-subheading">
+                            Moderní webová prezentace nabízející byty k pronájmu v činžovních domech na ulici Freyova.
+                            Přehledné informace o bytech, fotografie a kontaktní formulář pro zájemce.
+                        </p>
+                        <!-- <a href="https://modernizujme.cz/5/index.html" target="_blank" rel="noopener noreferrer" class="inline-block text-yellow-500 font-medium project-main-cta-link section-box-main-cta-link">
+                            Zobrazit projekt
+                        </a> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <section class="px-6 py-24 offers" id="offers"></section> -->
+
+    <!-- <section class="px-6 py-24 contact" id="contact"></section> -->
+
+    <!-- <footer class="footer" id="footer"></footer> -->
+
+    <script src="js/index.js"></script>
+    <script src="js/headers.js"></script>
+    <script src="js/typing-effect.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/go-to-sect.js"></script>
 </body>
 </html>
