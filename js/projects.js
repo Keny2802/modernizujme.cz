@@ -16,8 +16,14 @@ const projectLinkATTRS = {
 
 projects.forEach((project, projectIndex) => {
     const projectLink = document.createElement("a");
+    const newProjectIndex = projectIndex + 1;
 
-    projectLink.href = `https://modernizujme.cz/${projectIndex + 1}/index.html`;
+    projectLink.href = `https://modernizujme.cz/${newProjectIndex}/index.html`;
+    
+    if (newProjectIndex === 5) {
+        projectLink.href = "https://freyova.cz";
+    };
+    
     projectLink.classList.add(...projectLinkSET);
     projectLink.textContent = "Zobrazit projekt";
 

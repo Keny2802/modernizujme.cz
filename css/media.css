@@ -1,16 +1,28 @@
 :root {
     --white: #ffffff;
+
     --black: #000000;
+
     --blue-400: #60a5fa;
     --blue-500: #3b82f6;
     --blue-600: #2563eb;
     --blue-700: #1d4ed8;
     --blue-800: #1e40af;
+
+    --gray-700: #374151;
+
     --yellow-300: oklch(90.5% 0.182 98.111);
     --yellow-400: #d4af37;
     --yellow-500: #eab308;
 
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+    --opacity-100: 1;
+
+    --scale-103: 1.03;
+    --scale-105: 1.05;
+
+    --cursor-pointer: pointer;
 }
 
 /* 800px */
@@ -48,6 +60,10 @@
     .about-main-cta-link {
         margin-bottom: 1rem;
     }
+
+    .form-group-submit-btn {
+        width: 100%;
+    }
 }
 
 @media (hover: hover) {
@@ -67,6 +83,8 @@
 
     .project:hover {
         box-shadow: var(--shadow-xl);
+        transform: scale(var(--scale-103));
+        cursor: var(--cursor-pointer);
     }
 
     .project-main-cta-link:hover {
@@ -76,5 +94,27 @@
 
     .scroll-sect-btn:hover {
         background: var(--yellow-300);
+    }
+
+    .section-main-heading-hash:hover {
+        color: var(--gray-700);
+        /* opacity: var(--opacity-100); */
+    }
+
+    .section-main-heading-hash.no-hover:hover {
+        color: inherit;
+    }
+
+    .offer-card:hover {
+        transform: scale(var(--scale-103));
+        cursor: var(--cursor-pointer);
+    }
+
+    .form-group-submit-btn:hover {
+        background: var(--yellow-500);
+    }
+
+    .footer-link:hover {
+        color: var(--yellow-400);
     }
 }
