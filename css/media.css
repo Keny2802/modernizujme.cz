@@ -1,7 +1,5 @@
 :root {
     --white: #ffffff;
-    --white-1: #f8f5f2;
-    --white-2: #e0dcd7;
 
     --black: #000000;
 
@@ -11,10 +9,6 @@
     --blue-700: #1d4ed8;
     --blue-800: #1e40af;
 
-    --brown-1: #603200;
-
-    --gray-200: oklch(92.8% 0.006 264.531);
-    --gray-100: oklch(96.7% 0.003 264.542);
     --gray-700: #374151;
 
     --yellow-300: oklch(90.5% 0.182 98.111);
@@ -31,49 +25,96 @@
     --cursor-pointer: pointer;
 }
 
-@media screen and (max-width: 62.5rem) {
-    .header-logo {
-        height: 43px;
-        width: 102px;
-    }
-
-    .nav-container {
-        font-size: 1rem;
+/* 800px */
+@media screen and (max-width: 50rem) {
+    .about-wrapper .about-image-wrapper {
+        order: 2;
     }
 }
 
-@media screen and (max-width: 54rem) {
-    .filter-tab {
-        gap: 1rem;
-    }
-}
-
+/* 768px */
 @media screen and (max-width: 48rem) {
-    .nav-container {
-        display: none;
+    .header-logo-content,
+    .side-panel-logo-content {
+        font-size: 1.5rem;
     }
-    
+
+    /* 30px */
     .section-main-heading {
-        font-size: 30px;
+        font-size: 1.875rem;
+    }
+
+    /* 25px */
+    .project-number {
+        font-size: 1.5625rem;
+    }
+}
+
+/* 600px */
+@media screen and (max-width: 37.5rem) {
+    .about-cta-wrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .about-main-cta-link {
+        margin-bottom: 1rem;
+    }
+
+    .form-group-submit-btn {
+        width: 100%;
     }
 }
 
 @media (hover: hover) {
-    .nav-list-item-link:hover {
-        /* color: var(--yellow-500); */
-        color: var(--brown-1);
+    .nav-link:hover {
+        color: var(--yellow-400);
     }
 
-    /* .side-panel-nav-container-list-item:hover {
-        background: var(--gray-700);
-    } */
-
-    .side-panel-nav-container-list-item-link:hover {
-        /* color: var(--yellow-500); */
-        color: var(--brown-1);
+    .hero-main-cta-link:hover,
+    .about-main-cta-link:hover {
+        background: var(--yellow-500);
     }
 
-    .footer-list-item-link:hover {
-        color: var(--brown-1);
+    .about-second-main-cta-link:hover {
+        background: var(--yellow-400);
+        color: var(--black);
+    }
+
+    .project:hover {
+        box-shadow: var(--shadow-xl);
+        transform: scale(var(--scale-103));
+        cursor: var(--cursor-pointer);
+    }
+
+    .project-main-cta-link:hover {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+
+    .scroll-sect-btn:hover {
+        background: var(--yellow-300);
+    }
+
+    .section-main-heading-hash:hover {
+        color: var(--gray-700);
+        /* opacity: var(--opacity-100); */
+    }
+
+    .section-main-heading-hash.no-hover:hover {
+        color: inherit;
+    }
+
+    .offer-card:hover {
+        transform: scale(var(--scale-103));
+        cursor: var(--cursor-pointer);
+    }
+
+    .form-group-submit-btn:hover {
+        background: var(--yellow-500);
+    }
+
+    .footer-link:hover {
+        color: var(--yellow-400);
     }
 }
