@@ -2,7 +2,7 @@
   "name": "u-lazebnika-react-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://modernizujme.cz/6",
+  "homepage": "https://modernizujme.cz/6/index.html",
   "type": "module",
   "scripts": {
     "dev": "vite",
