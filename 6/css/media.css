@@ -1,0 +1,79 @@
+:root {
+    --white: #ffffff;
+    --white-1: #f8f5f2;
+    --white-2: #e0dcd7;
+
+    --black: #000000;
+
+    --blue-400: #60a5fa;
+    --blue-500: #3b82f6;
+    --blue-600: #2563eb;
+    --blue-700: #1d4ed8;
+    --blue-800: #1e40af;
+
+    --brown-1: #603200;
+
+    --gray-200: oklch(92.8% 0.006 264.531);
+    --gray-100: oklch(96.7% 0.003 264.542);
+    --gray-700: #374151;
+
+    --yellow-300: oklch(90.5% 0.182 98.111);
+    --yellow-400: #d4af37;
+    --yellow-500: #eab308;
+
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+    --opacity-100: 1;
+
+    --scale-103: 1.03;
+    --scale-105: 1.05;
+
+    --cursor-pointer: pointer;
+}
+
+@media screen and (max-width: 62.5rem) {
+    .header-logo {
+        height: 43px;
+        width: 102px;
+    }
+
+    .nav-container {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 54rem) {
+    .filter-tab {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .nav-container {
+        display: none;
+    }
+    
+    .section-main-heading {
+        font-size: 30px;
+    }
+}
+
+@media (hover: hover) {
+    .nav-list-item-link:hover {
+        /* color: var(--yellow-500); */
+        color: var(--brown-1);
+    }
+
+    /* .side-panel-nav-container-list-item:hover {
+        background: var(--gray-700);
+    } */
+
+    .side-panel-nav-container-list-item-link:hover {
+        /* color: var(--yellow-500); */
+        color: var(--brown-1);
+    }
+
+    .footer-list-item-link:hover {
+        color: var(--brown-1);
+    }
+}
